@@ -18,17 +18,17 @@ Her skal det stå noe relevant om Big data
 <a name="of2"></a>
 ## Topic 2 - ..
 
-Må tilføyes noe aktuelt om RNN i den seksjonen
+Må tilføyes noe aktuelt om RNN i denne seksjonen
 
 <a name="of3"></a>
 ## Topic 3 - ..
 
-blablabla
+Deep lake
 
 <a name="of4"></a>
 ## Topic 4 - ..
 
-blablabla
+
 
 <a name="of5"></a>
 ## Topic 5 - ..
