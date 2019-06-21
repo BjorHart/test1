@@ -13,7 +13,7 @@ This repo is for the Summer Interns 2019 and their robotic arm project.
 <a name="of1"></a>
 ## Topic 1 - ..
 
-blablabla
+Her skal det stå noe relevant om Big data
 
 <a name="of2"></a>
 ## Topic 2 - ..
