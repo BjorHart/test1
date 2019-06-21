@@ -18,7 +18,7 @@ Her skal det stå noe relevant om Big data
 <a name="of2"></a>
 ## Topic 2 - ..
 
-blablabla
+Må tilføyes noe aktuelt om RNN i den seksjonen
 
 <a name="of3"></a>
 ## Topic 3 - ..
