@@ -15,6 +15,12 @@
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+  
+  ----------------------------------------------------------------------------
+  
+  Modified by Paal Arthur Schjelderup Thorseth 2019
+
+  Modified to better serve the purposes of EDRMedesos' summer project 2019.
 */
 
 #ifndef BRACCIO_H_
