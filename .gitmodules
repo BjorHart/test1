@@ -1,0 +1,3 @@
+[submodule "Arduino/arduino-library-braccio"]
+	path = Arduino/arduino-library-braccio
+	url = https://github.com/arduino-org/arduino-library-braccio
