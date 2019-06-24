@@ -13,12 +13,10 @@ This repo is for the Summer Interns 2019 and their robotic arm project.
 <a name="of1"></a>
 ## Topic 1 - ..
 
-Her skal det stå noe relevant om Big data
 
 <a name="of2"></a>
 ## Topic 2 - ..
 
-Må tilføyes noe aktuelt om RNN i denne seksjonen
 
 <a name="of3"></a>
 ## Topic 3 - ..
