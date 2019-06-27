@@ -29,6 +29,7 @@ void loop() {
 
  
   // Set the position
+  
   // M1=base degrees. Allowed values from 0 to 180 degrees
   // M2=shoulder degrees. Allowed values from 15 to 165 degrees
   // M3=elbow degrees. Allowed values from 0 to 180 degrees
