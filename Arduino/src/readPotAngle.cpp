@@ -18,8 +18,8 @@ int const minAngle = 0;
 int sensorValue;
 int angle;
 
-int readPotAngle(int const potPin){
-    sensorValue = analogRead(potPin); // read input from potPin
+int readPotAngle(int const POTPIN){
+    sensorValue = analogRead(POTPIN); // read input from potPin
     Serial.print("sensorValue: "); Serial.println(sensorValue);
 
     angle = map(sensorValue, 0, 1023, minAngle, maxAngle); // convert sensorValue to angle
