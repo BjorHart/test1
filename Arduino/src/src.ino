@@ -13,6 +13,6 @@ void setup(){
 }
 
 void loop(){
-    readPotAngle();
+    readPotAngle(A0);
     delay(1000);
 }
