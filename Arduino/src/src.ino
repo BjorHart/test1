@@ -13,6 +13,12 @@ void setup(){
 }
 
 void loop(){
+  /*
     readPotAngle(A0);
     delay(1000);
+  */
+   int sensorValue = analogRead(A0); // read input from potPin
+    Serial.print("sensorValue: "); Serial.println(sensorValue);
+
+
 }
