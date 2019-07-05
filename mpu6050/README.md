@@ -2,18 +2,21 @@
 
 ## MPU6050 setup
 
-# Sensor 1
+### Sensor 1
 
 VCC -> 5V
+
 GND -> GND
+
 SCL -> SCL
 
 SDA -> SDA
 
 AD0 -> 3V3
+
 INT -> Digital pin 8 (if using DMP)
 
-# Sensor 2
+### Sensor 2
 
 VCC -> 5V
 
@@ -24,8 +27,9 @@ SCL -> SCL
 SDA -> SDA
 
 AD0 -> GND
+
 INT -> Digital pin 9 (if using DMP)
-------------------------------------------
+
 2 * 10K pull up resistors on SDA and SCL line (to 5V). 
 
 ![alt text](https://components101.com/sites/default/files/component_pin/MPU6050-Pinout.png)
