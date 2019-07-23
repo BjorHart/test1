@@ -14,7 +14,7 @@ void setup(){
 
 void loop(){
 
-  readPotAngle(A0;
+  readPotAngle(A0);
   delay(1000);
 
 }
