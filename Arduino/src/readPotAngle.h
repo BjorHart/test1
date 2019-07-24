@@ -15,6 +15,6 @@
 
 #include <Arduino.h>
 
-int readPotAngle();
+int readPotAngle(int const POTPIN);
 
 #endif // READPOTANGLE_H_
