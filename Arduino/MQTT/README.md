@@ -1,9 +1,6 @@
 ## Libary dependencies 
-- Pubsub
+- PubSubClient by Nick O'Leary (https://pubsubclient.knolleary.net/)
+- ArduinoJson by Benoit Blanchon (https://arduinojson.org/?utm_source=meta&utm_medium=library.properties)
 
-  - MQTT Client Library 
-* Sram
-
-  - Simple Serial Library 
 
 Install these libraries from Sketch>Include Libraries>Manage Libraries in the Arduino IDE
