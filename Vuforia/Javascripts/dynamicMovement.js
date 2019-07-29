@@ -11,11 +11,11 @@ var delta_middleArm_rx = 0;
 var delta_upperArm_rx = 0;
 
 // invoked by Power button 'Pressed' event
-$scope.startRobot = function () {
+$scope.startRobot = function() {
     if (timerId > -1) { clearInterval(timerId); }
 
     // evaluates the function at intervals specified by the timingInterval variable
-    timerId = setInterval( function() {
+    timerId = setInterval(function() {
         // ensure parameter values
         if (!$scope.app.params.base_ry) { $scope.app.params.base_ry = 0; }
         if (!$scope.app.params.lowerArm_rx) { $scope.app.params.lowerArm_rx = 0; }
@@ -36,20 +36,20 @@ $scope.startRobot = function () {
 
 
 // functions used by toggling the 'Pressed' and 'Unpressed' events
-$scope.rotBaseLeft = function() { delta_base_ry = 0.002; }
-$scope.rotBaseRight = function() { delta_base_ry = 0.002; }
-$scope.stopBase = function () { delta_base_ry = 0; }
+$scope.rotBaseLeft  = function() { delta_base_ry = 0.5; }
+$scope.rotBaseRight = function() { delta_base_ry = -0.5; }
+$scope.stopBase     = function() { delta_base_ry = 0; }
 
-$scope.rotLowerArmLeft = function() { delta_lowerArm_rx = 0.002; }
-$scope.rotLowerArmRight = function() { delta_lowerArm_rx = 0.002; }
-$scope.stopLowerArm = function () { delta_lowerArm_rx = 0; }
-
-
-$scope.rotMiddleArmLeft = function() { delta_middleArm_rx = 0.002; }
-$scope.rotMiddleArmRight = function() { delta_middleArm_rx = 0.002; }
-$scope.stopMiddleArm = function () { delta_middleArm_rx = 0; }
+$scope.rotLowerArmLeft  = function() { delta_lowerArm_rx = 0.5; }
+$scope.rotLowerArmRight = function() { delta_lowerArm_rx = -0.5; }
+$scope.stopLowerArm     = function() { delta_lowerArm_rx = 0; }
 
 
-$scope.rotUpperArmLeft = function() { delta_upperArm_rx = 0.002; }
-$scope.rotUpperArmRight = function() { delta_upperArm_rx = 0.002; }
-$scope.stopUpperArm = function () { delta_upperArm_rx = 0; }
+$scope.rotMiddleArmLeft  = function() { delta_middleArm_rx = 0.5; }
+$scope.rotMiddleArmRight = function() { delta_middleArm_rx = -0.5; }
+$scope.stopMiddleArm     = function() { delta_middleArm_rx = 0; }
+
+
+$scope.rotUpperArmLeft  = function() { delta_upperArm_rx = 0.5; }
+$scope.rotUpperArmRight = function() { delta_upperArm_rx = -0.5; }
+$scope.stopUpperArm     = function() { delta_upperArm_rx = 0; }
