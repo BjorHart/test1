@@ -4,7 +4,7 @@
 
 //char* deviceId     = "SUMMERINTERNS"; // * set your device id (will be the MQTT client username) DO NOT NEED?
 //char* deviceSecret = "Passord"; // * set your device secret (will be the MQTT client password) DO NOT NEED?
-char* outTopic     = "outTopic"; // * MQTT channel where physical updates are published
+char* outTopic     = "Data"; // * MQTT channel where physical updates are published
 char* inTopic      = "inTopic"; // * MQTT channel where lelylan updates are received
 //char* clientId     = "Arduino1"; // * set a random string (max 23 chars, will be the MQTT client id) DO NOT NEED?
 
@@ -21,6 +21,7 @@ size_t n;
 
 char* test;
 
+long randNumber;    
 // Yun configuration
 byte mac[] = {0xA8, 0x40, 0x41, 0x1A, 0x4C, 0x0C }; // MAC adress of the Arduino Yun
 BridgeClient yun;
@@ -40,7 +41,8 @@ void setup() {
 
 void loop() {
   char* value;
-  jsonSerializer(123,45,67,(890.12)); // Currently used for testinng instead of real sensor data
+  randNumber = random(22, 180);    
+  jsonSerializer(randNumber,45,67,890.12, 0); // Currently used for testinng instead of real sensor data
   if (isRunning) {
     if (data) {
       Serial.println("Publishing message");
@@ -55,14 +57,15 @@ void loop() {
 }
 
 // Serializes the given angles and weight to a JSON string 
-void jsonSerializer (char lower, int middle, int upper, float weight){
-  const size_t capacity = JSON_OBJECT_SIZE(4);
+void jsonSerializer (int lower, int middle, int upper, float weight, int rotation){
+  const size_t capacity = JSON_OBJECT_SIZE(5);
   DynamicJsonDocument doc(capacity);
   
-  doc["sensor1"] = lower;
-  doc["sensor2"] = middle;
-  doc["sensor3"] = upper;
+  doc["lower"] = lower;
+  doc["middle"] = middle;
+  doc["upper"] = upper;
   doc["weight"] = weight;
+  doc["rotation"] = rotation; 
 
   size_t n = serializeJson(doc, buffer); //Sends the serialized JSON string to the buffer, also calculates the byte size to optimize number of cpu cycles
   serializeJson(doc, Serial);
@@ -84,7 +87,7 @@ void brokerConnection() {
 void brokerPublish(char* value) {
   if (value == "publish")
     //client.publish(outTopic, payload); //used for testing
-    client.publish("outTopic", buffer, n);
+    client.publish(outTopic, buffer, n);
   else
     Serial.println("Error when publishing");
 }
