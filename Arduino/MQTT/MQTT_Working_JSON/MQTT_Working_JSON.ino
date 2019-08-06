@@ -51,7 +51,7 @@ void loop() {
     } else {
       Serial.println("No data, no publishing");
     }
-    delay(3000);
+    delay(150);
     time = millis();
   }
 }
