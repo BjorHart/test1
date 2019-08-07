@@ -35,6 +35,7 @@
                         { value: 'normal', text: 'Normal' },
                         { value: 'blue', text: 'Blue' },
                         { value: 'gray', text: 'Gray' }
+                        { value: 'premium', text: 'Premium' }
                     ]
                 },
                 'ShowTraffic': {
