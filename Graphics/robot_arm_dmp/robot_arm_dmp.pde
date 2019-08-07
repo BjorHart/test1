@@ -34,7 +34,7 @@ void setup(){
      String portName = Serial.list()[portIndex];
     //  println(Serial.list());
     //  println(" Connecting to -> " + Serial.list()[portIndex]);
-    myPort = new Serial(this, portName, 57600);
+    myPort = new Serial(this, portName, 115200);
     myPort.clear();
     myPort.bufferUntil(lf);
     
@@ -72,12 +72,12 @@ void draw(){
      shape(base);
      
    translate(0, 4, 0);
-   rotateY(-radians(CMP2[0]));
+   rotateY(-radians(CMP1[0]));
      shape(shoulder);
       
    translate(0, 25, 0);
    rotateY(PI);
-   rotateX(-radians(CMP2[1]));  // multiplied with offset factor to make model better
+   rotateX(-radians(CMP1[1]));  // multiplied with offset factor to make model better
      shape(upArm);
       
    translate(0, 0, 50);
@@ -106,15 +106,12 @@ void serialEvent(Serial p) {
     //println(inString);
     String[] dataStrings = split(inString, ':');
     if (dataStrings.length == 4) {
-      if (dataStrings[0].equals("CMP1")) {
+      if (dataStrings[0].equals("CMP")) {
         for (int i = 0; i < dataStrings.length - 1; i++) {
           CMP1[i] = float(dataStrings[i+1]);
         }
-      } else if (dataStrings[0].equals("CMP2")) {
-        for (int i = 0; i < dataStrings.length - 1; i++) {
-          CMP2[i] = float(dataStrings[i+1]);
-        }        
-      } else {
+      } 
+      else {
         println(inString);
       }
     }

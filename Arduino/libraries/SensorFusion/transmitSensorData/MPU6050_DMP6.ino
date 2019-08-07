@@ -73,13 +73,12 @@ void rotationSensorSetup() {
     // (115200 chosen because it is required for Teapot Demo output, but it's
     // really up to you depending on your project)
     Serial.begin(115200);
-    while (!Serial); // wait for Leonardo enumeration, others continue immediately
-
-
+    
+    // while (!Serial); // wait for Leonardo enumeration, others continue immediately       // COMMENTED OUT --- MAY NEED TO BE THERE
 
     mpu.initialize();
  
-   // mpu.testConnection() ? F("MPU6050 connection successful") : F("MPU6050 connection failed");
+    mpu.testConnection() ? F("MPU6050 connection successful") : F("MPU6050 connection failed");
 
     devStatus = mpu.dmpInitialize();
 

@@ -71,7 +71,7 @@ void setup() {
     //String portName = Serial.list()[0];
     
     // get a specific serial port (use EITHER this OR the first-available code above)
-    String portName = "COM5";                                                    // Set to the correct port
+    String portName = "COM7";                                                    // Set to the correct port
     
     // open the serial port
     port = new Serial(this, portName, 115200); // old 115200

@@ -326,7 +326,6 @@ const unsigned char dmpUpdates[MPU6050_DMP_UPDATES_SIZE] PROGMEM = {
 
 uint8_t MPU6050::dmpInitialize() {
     // reset device
-    Serial.println("HHHHHHHHHHHHHHHHHHH");
     DEBUG_PRINTLN(F("\n\nResetting MPU6050..."));
     reset();
     delay(30); // wait after reset
