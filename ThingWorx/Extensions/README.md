@@ -1,4 +1,4 @@
-#ThingWorx Extensions 
+# ThingWorx Extensions 
 
 ## Google Maps Custom Extension also needs the following CSS implemented in ThingWorx Mashup:
 ```CSS
