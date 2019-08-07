@@ -33,9 +33,8 @@
                     'defaultValue': 'normal',
                     'selectOptions': [
                         { value: 'normal', text: 'Normal' },
-                        { value: 'blue', text: 'Blue' },
+                        { value: 'premium', text: 'Premium' },
                         { value: 'gray', text: 'Gray' }
-                        { value: 'premium', text: 'Premium' }
                     ]
                 },
                 'ShowTraffic': {
