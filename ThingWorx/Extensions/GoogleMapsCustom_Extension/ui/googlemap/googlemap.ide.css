@@ -1,0 +1,12 @@
+﻿.widget-googlemap-helper
+{
+    background:#fff url(bg-googlemap.jpg) no-repeat center center;
+    width:400px;
+    height:200px;
+}
+.widget-map-designer
+{
+    background:url(bg-googlemap.jpg) no-repeat center center #fff;
+    position:absolute;
+    text-indent:-8888px;
+}

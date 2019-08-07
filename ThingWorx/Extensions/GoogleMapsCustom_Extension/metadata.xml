@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities>
+	<ExtensionPackages>
+		<ExtensionPackage name="GoogleMapsCustom_Extension"
+						  description="Custom Google Maps"
+						  vendor="ThingWorx"
+						  packageVersion="3.0.3"
+						  minimumThingWorxVersion="8.2.0" />
+	</ExtensionPackages>
+	<StyleDefinitions>
+		<StyleDefinition name="DefaultMapRegionSelectedStyle" description="Default map region selected marker style" documentationContent="" lastModifiedDate="2013-10-03T14:44:30.820-04:00" tags=""><content><![CDATA[{"displayString":"","fontEmphasisUnderline":false,"fontEmphasisItalic":false,"textSize":"normal","lineColor":"#000000","backgroundColor":"#1206ff","lineStyle":"solid","lineThickness":1,"secondaryBackgroundColor":"","fontEmphasisBold":false,"foregroundColor":""}]]></content></StyleDefinition>
+	</StyleDefinitions>
+	<Widgets>
+		<Widget name="googlemap">
+			<UIResources>
+				<!-- Studio ONLY -->
+				<FileResource type="CSS" file="googlemap.ide.css" description="" isDevelopment="true" isRuntime="false" />
+				<FileResource type="JS" file="googlemap.ide.js" description="" isDevelopment="true" isRuntime="false" />
+				<!-- Runtime/Squeal ONLY -->
+				<FileResource type="CSS" file="googlemap.runtime.css" description="" isDevelopment="false" isRuntime="true" />
+				<FileResource type="JS" file="googlemap.runtime.js" description="" isDevelopment="false" isRuntime="true" />
+				<FileResource type="JS" file="markerclusterer.js" isDevelopment="false" isRuntime="true" />
+			</UIResources>
+		</Widget>
+		<Widget name="googlelocation">
+			<UIResources>
+				<!-- Studio ONLY -->
+				<FileResource type="CSS" file="googlelocation.ide.css" description="" isDevelopment="true" isRuntime="false" />
+				<FileResource type="JS" file="googlelocation.ide.js" description="" isDevelopment="true" isRuntime="false" />
+				<!-- Runtime/Squeal ONLY -->
+				<FileResource type="CSS" file="googlelocation.runtime.css" description="" isDevelopment="false" isRuntime="true" />
+				<FileResource type="JS" file="googlelocation.runtime.js" description="" isDevelopment="false" isRuntime="true" />
+			</UIResources>
+		</Widget>
+	</Widgets>
+</Entities>

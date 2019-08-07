@@ -1,0 +1,31 @@
+div.widget-google-location-picker { background-color:#ededed; font-size:11px; }
+div.widget-google-location-picker .coreLocationPicker {
+    padding:10px;
+    position:relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div.widget-google-location-picker label { display:block; font-size:11px; font-weight:bold; line-height:16px; margin:0; }
+div.widget-google-location-picker input { color:#333; font-size:11px; margin-bottom:10px !important; padding:2px; width:auto; }
+div.widget-google-location-picker .locationMapButton {
+	background: #717171; /* Old browsers */
+	background: -moz-linear-gradient(top,  #717171 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #717171 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #717171 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #717171 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(top,  #717171 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#717171', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	
+	border: 1px solid #000;
+
+	cursor: pointer;
+	padding: 3px 6px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px; }
+div.widget-google-location-picker .locationMapButton:hover { background-color:#0d2e6d; }
+div.widget-google-location-picker .locationMapButton span { color:#fff; padding-left:3px; }
+
+.widget-googlelocation-helper { background:url(images/helper.png) no-repeat; width:175px; height:188px; }
