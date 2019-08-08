@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><Entities>
+  <ExtensionPackages>
+    <ExtensionPackage name="ThingWorxProgressBarWidget_Extension" description="ProgressBar Widget" vendor="TPG Romania - A PTC Division" packageVersion="0.0.179" minimumThingWorxVersion="7.2.0"/>
+  </ExtensionPackages>
+  <Widgets>
+    <Widget name="ProgressBarWidget">
+      <UIResources>
+        <FileResource file="ProgressBarWidget.ide.js" isDevelopment="true" isRuntime="false" type="JS"/>
+        <FileResource file="ProgressBarWidget.ide.css" isDevelopment="true" isRuntime="false" type="CSS"/>
+        <FileResource file="ProgressBarWidget.runtime.js" isDevelopment="false" isRuntime="true" type="JS"/>
+        <FileResource file="ProgressBarWidget.runtime.css" isDevelopment="false" isRuntime="true" type="CSS"/>
+        <FileResource file="progressBar/progressbar.bundle.js" isDevelopment="true" isRuntime="true" type="JS"/>
+      </UIResources>
+    </Widget>
+  </Widgets>
+  <StyleDefinitions>
+    <StyleDefinition description="" documentationContent="" homeMashup="" lastModifiedDate="2017-01-27T10:18:53.667+02:00" name="DefaultProgressBarStyle" projectName="" tags="">
+      <content>{"image":"","backgroundColor":"","textSize":"normal","lineStyle":"solid","displayString":"DefaultProgressBarStyle","fontEmphasisUnderline":false,"fontEmphasisItalic":false,"lineThickness":6,"foregroundColor":"","lineColor":"#5ab426","fontEmphasisBold":false,"secondaryBackgroundColor":""}</content>
+    </StyleDefinition>
+    <StyleDefinition description="" documentationContent="" homeMashup="" lastModifiedDate="2017-01-27T10:18:53.667+02:00" name="DefaultProgressBarEmptyStyle" projectName="" tags="">
+      <content>{"image":"","backgroundColor":"","textSize":"normal","lineStyle":"solid","displayString":"DefaultProgressBarEmptyStyle","fontEmphasisUnderline":false,"fontEmphasisItalic":false,"lineThickness":3,"foregroundColor":"","lineColor":"#e2e2e2","fontEmphasisBold":false,"secondaryBackgroundColor":""}</content>
+    </StyleDefinition>
+    <StyleDefinition description="" documentationContent="" homeMashup="" lastModifiedDate="2017-01-27T10:18:53.667+02:00" name="DefaultProgressBarValueStyle" projectName="" tags="">
+      <content>{"image":"","backgroundColor":"","textSize":"24px","lineStyle":"solid","displayString":"DefaultProgressBarValueStyle","fontEmphasisUnderline":false,"fontEmphasisItalic":false,"lineThickness":1,"foregroundColor":"#434b4f","lineColor":"","fontEmphasisBold":false,"secondaryBackgroundColor":""}</content>
+    </StyleDefinition>
+    <StyleDefinition description="" documentationContent="" homeMashup="" lastModifiedDate="2017-01-27T10:18:53.667+02:00" name="DefaultProgressBarLabelStyle" projectName="" tags="">
+      <content>{"image":"","backgroundColor":"","textSize":"normal","lineStyle":"solid","displayString":"DefaultProgressBarLabelStyle","fontEmphasisUnderline":false,"fontEmphasisItalic":false,"lineThickness":1,"foregroundColor":"#607a86","lineColor":"","fontEmphasisBold":false,"secondaryBackgroundColor":""}</content>
+    </StyleDefinition>
+  </StyleDefinitions>
+</Entities>

@@ -1,0 +1,34 @@
+.widget-angular-button{
+    background-color: #cccccc;
+    position: absolute;
+
+    transition: all 0.1s ease-in-out;
+}
+.widget-angular-button:hover {
+  background-color: #eeeeee;
+}
+.widget-angular-button:active {
+  background-color: #dddddd;
+}
+
+.widget-angular-button > .ng-scope {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.widget-angular-button > .ng-scope > span.ng-binding {
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+}
+
+
+
+
+/*span {
+    position: absolute;
+    background:#f00;
+    text-align:center;
+    top: 0px; bottom: 0px; left: 0px; right: 0px;
+} */
