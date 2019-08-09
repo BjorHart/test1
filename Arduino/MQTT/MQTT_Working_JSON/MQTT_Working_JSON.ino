@@ -27,6 +27,12 @@ byte mac[] = {0xA8, 0x40, 0x41, 0x1A, 0x4C, 0x0C }; // MAC adress of the Arduino
 BridgeClient yun;
 PubSubClient client;     
 
+int lower = 90;
+int middle = 12;
+int upper = 143;
+int rotation = 45 ;
+int weight = 10;
+int number;
 
 void setup() {
   Serial.begin(9600);
@@ -39,10 +45,18 @@ void setup() {
   brokerConnection();
 }
 
+
+
 void loop() {
   char* value;
-  randNumber = random(1, 180);    
-  jsonSerializer(randNumber,(randNumber + 20),(randNumber - 17),(randNumber + 890.12), (randNumber + randNumber)); // Currently used for testinng instead of real sensor data
+  //randNumber = random(1, 180);  
+  //lower = increment(lower);
+  //middle = increment(middle);
+  //upper = increment(upper);
+  //rotation = increment(rotation);
+  //weight = increment(weight);
+    
+  jsonSerializer(lower, middle, upper, rotation, weight); // Currently used for testinng instead of real sensor data
   if (isRunning) {
     if (data) {
       Serial.println("Publishing message");
@@ -51,9 +65,30 @@ void loop() {
     } else {
       Serial.println("No data, no publishing");
     }
+    lower = increment (lower);
+    middle = increment (middle);
+    upper = increment (upper);
+    rotation = increment (rotation);
+    weight = increment (weight);
+    //lower++;
+    //middle++;
+    //upper++;
+    //rotation++;
+    //weight++;
     delay(150);
     time = millis();
   }
+}
+
+int increment(int number){
+  if (number < 180){
+    number++;
+  }
+  else {
+    number = 10;
+   
+  }
+  return number;
 }
 
 // Serializes the given angles and weight to a JSON string 
