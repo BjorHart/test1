@@ -41,8 +41,8 @@ void setup() {
 
 void loop() {
   char* value;
-  randNumber = random(22, 180);    
-  jsonSerializer(randNumber,45,67,890.12, 0); // Currently used for testinng instead of real sensor data
+  randNumber = random(1, 180);    
+  jsonSerializer(randNumber,(randNumber + 20),(randNumber - 17),(randNumber + 890.12), (randNumber + randNumber)); // Currently used for testinng instead of real sensor data
   if (isRunning) {
     if (data) {
       Serial.println("Publishing message");
