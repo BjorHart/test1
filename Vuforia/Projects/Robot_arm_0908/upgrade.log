@@ -1,0 +1,43 @@
+[2019-07-26T06:14:04.653Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Begin upgrade of project Arduino_Braccio_Robot_Arm
+[2019-07-26T06:14:04.653Z] info: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Upgrading project Arduino Braccio Robot Arm C:\Users\PaalArthurSchjelderu\Documents\VuforiaStudio\Projects\Arduino_Braccio_Robot_Arm from 1.41.1589 to 8.4.6.4436 (1.41.1589)
+[2019-07-26T06:14:04.656Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Make sure there are not any stale files lying around
+[2019-07-26T06:14:04.657Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Create .gitignore for project dir
+[2019-07-26T06:14:04.658Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Copying /src/**/* to project, overwrite=false
+[2019-07-26T06:14:04.659Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2019-07-26T06:14:04.751Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Copy of project files complete
+[2019-07-26T06:14:04.752Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Updating version to  8.4.6.4436 (1.41.1589)
+[2019-07-26T06:14:04.752Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] onupgrade sucessful, now build the project
+[2019-07-26T06:14:04.752Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] BEGIN buildApp Arduino_Braccio_Robot_Arm_1564121644752
+[2019-07-26T06:14:04.752Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] write settings
+[2019-07-26T06:14:04.753Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] copy runtime extensions
+[2019-07-26T06:14:05.491Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] packageThemeSet
+[2019-07-26T06:14:06.302Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] onBuild
+[2019-07-26T06:14:06.302Z] info: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Building ves-ar-extension app: Arduino Braccio Robot Arm
+[2019-07-26T06:14:06.302Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] pathDir C:\Users\PaalArthurSchjelderu\Documents\VuforiaStudio\Projects\Arduino_Braccio_Robot_Arm
+[2019-07-26T06:14:06.303Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] scaffoldDir C:\Users\PaalArthurSchjelderu\AppData\Roaming\VuforiaStudio\studio-download.vuforia.io\node_modules\ves-ar-extension\src\src-scaffold
+[2019-07-26T06:14:06.303Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] copySrc
+[2019-07-26T06:14:06.997Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] buildApp
+[2019-07-26T06:14:07.602Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] END buildApp Arduino_Braccio_Robot_Arm_1564121644752
+[2019-07-26T06:14:07.602Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm] Build succeeded.
+[2019-08-08T06:43:26.918Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Begin upgrade of project Arduino_Braccio_Robot_Arm_70_
+[2019-08-08T06:43:26.918Z] info: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Upgrading project Arduino_Braccio_Robot_Arm[70] C:\Users\MartinLundHaug\Documents\VuforiaStudio\Projects\Arduino_Braccio_Robot_Arm_70_ from 1.41.1589 to 8.4.5.4404 (1.40.1573)
+[2019-08-08T06:43:26.920Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Make sure there are not any stale files lying around
+[2019-08-08T06:43:26.921Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Removing  C:\Users\MartinLundHaug\Documents\VuforiaStudio\Projects\Arduino_Braccio_Robot_Arm_70_/src/phone/resources/Default/
+[2019-08-08T06:43:26.929Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Create .gitignore for project dir
+[2019-08-08T06:43:26.931Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Copying /src/**/* to project, overwrite=false
+[2019-08-08T06:43:26.933Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2019-08-08T06:43:27.045Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Copy of project files complete
+[2019-08-08T06:43:27.046Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Updating version to  8.4.5.4404 (1.40.1573)
+[2019-08-08T06:43:27.046Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] onupgrade sucessful, now build the project
+[2019-08-08T06:43:27.046Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] BEGIN buildApp Arduino_Braccio_Robot_Arm_70__1565246607046
+[2019-08-08T06:43:27.046Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] write settings
+[2019-08-08T06:43:27.051Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] copy runtime extensions
+[2019-08-08T06:43:27.889Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] packageThemeSet
+[2019-08-08T06:43:28.736Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] onBuild
+[2019-08-08T06:43:28.736Z] info: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Building ves-ar-extension app: Arduino_Braccio_Robot_Arm[70]
+[2019-08-08T06:43:28.749Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] pathDir C:\Users\MartinLundHaug\Documents\VuforiaStudio\Projects\Arduino_Braccio_Robot_Arm_70_
+[2019-08-08T06:43:28.749Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] scaffoldDir C:\Users\MartinLundHaug\AppData\Roaming\VuforiaStudio\studio-download.vuforia.io\node_modules\ves-ar-extension\src\src-scaffold
+[2019-08-08T06:43:28.749Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] copySrc
+[2019-08-08T06:43:29.517Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] buildApp
+[2019-08-08T06:43:30.635Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] END buildApp Arduino_Braccio_Robot_Arm_70__1565246607046
+[2019-08-08T06:43:30.635Z] debug: [twx-studio:upgrade:Arduino_Braccio_Robot_Arm_70_] Build succeeded.

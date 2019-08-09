@@ -1,0 +1,142 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "name": "Car1",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "Car1"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "GetPropertyValues",
+            "id": "GetPropertyValues",
+            "auto-refresh": "5",
+            "on-app-load": ""
+          },
+          "name": "twx-model-service"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "base_ry",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "base_ry",
+        "value": "20"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "lowerArm_rx",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "lowerArm_rx",
+        "value": "20"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "middleArm_rx",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "middleArm_rx",
+        "value": "20"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "upperArm_rx",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "upperArm_rx",
+        "value": "20"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "marker_rx",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "marker_rx",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-1565333106349",
+            "source-type": "data",
+            "source-name": "lowerArm_rx",
+            "source-item-type": "value",
+            "source-item-name": "lowerArm_rx",
+            "binding-type": "custom_field",
+            "from-expression": "app.params['lowerArm_rx']",
+            "to-property": "app.params['marker_rx']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "showSpecs",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "showSpecs",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "angle1",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "angle1",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    }
+  ],
+  "name": "twx-app-mdl"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Arduino_Braccio_Robot_Arm[70]",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "Arduino_Braccio_Robot_Arm_70_",
+  "thingworxServer": "https://49826783698b805c.studio-trial.vuforia.io",
+  "viewTemplateFileName": "home-ar.json",
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        },
+        {
+          "name": "Statistics",
+          "fileName": "Statistics",
+          "showInMainMenu": true,
+          "viewType": "mobile-2D",
+          "title": "Statistics"
+        },
+        {
+          "name": "Explore",
+          "fileName": "Explore",
+          "showInMainMenu": true,
+          "viewType": "mobile-2D",
+          "title": "Explore"
+        },
+        {
+          "name": "Template",
+          "fileName": "Template",
+          "showInMainMenu": true,
+          "viewType": "mobile-2D",
+          "title": "Template"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "fragments": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "device": {
+    "name": "ipad_pro",
+    "width": "1366",
+    "height": "1024"
+  },
+  "mainNavigationMenuStyle": "noMenu",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/fonts",
+  "theme": "twx-light",
+  "version": "1.40.1573"
+}

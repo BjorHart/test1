@@ -1,0 +1,134 @@
+/*
+   Add additional application styles or override styles provided by the selected theme or widgets.
+   You can include SASS syntax, as this file is built to a css file using a SASS processor.
+
+   Available Variables:
+
+   Variable Name      Description
+   ----------------------------------------------------
+   $resources         References the directory where resources reside (images, etc.), this directory may be different
+                      between the design time and the runtime directory structure.
+
+                      Example: background-image: url(#{$resources}/Uploaded/image.png)
+
+   $font-path        References the relative directory where fonts are stored.
+*/
+
+// Header background
+.header {
+	background-color: rgba(255,255,255,0.5); 
+}
+
+// Footer background
+.footerColor { 	
+  	background: rgba(255,255,255,0.5);
+}
+
+// Statistics graph background
+.graph_background {
+  	background: #f2f4f5;
+  	box-shadow: 0px 15px 15px rgba(0,0,0,0.09);
+}
+
+/* Change the background color and text color of the header */
+ion-footer-bar.bar {
+    background-color: rgba(255,255,255,0.5);
+    //color: rgba(255,255,255,0.5);
+}
+
+ion-footer-bar.bar-footer {
+    background-color: rgba(255,255,255,0.5);
+    //color: rgba(255,255,255,0.5);
+}
+
+
+// formatting perfect engineering label
+.label_perfect_engineering {
+    font-family: DIN OT;
+    font-color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+// formatting navigation labels
+
+// HEADER ----------------------
+.label_nav {
+    font-family: DIN OT;
+    font-color: #000000;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+  	letter-spacing: 0.07em;
+
+}
+
+.label_nav_selected {
+    font-family: DIN OT;
+    font-color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  	letter-spacing: 0.07em;
+
+}
+
+// STATISTICS --------------------------
+
+.label_nav_statistics {
+    font-family: DIN OT;
+    font-color: #000000;
+    font-size: 32px;
+    font-weight: lighter;
+    text-align: left;
+  	letter-spacing: 0.07em;
+}
+
+.label_nav_statistics_selected {
+    font-family: DIN OT;
+    font-color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+  	letter-spacing: 0.07em;
+}
+
+.label_nav_statistics2 {
+    font-family: Open Sans;
+    font-color: #a0a0a0;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+   	vertical-align: middle;
+  	letter-spacing: 0.07em;
+  	opacity: 0.5;
+}
+
+.label_nav_statistics2_selected {
+    font-family: Open Sans;
+    font-color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  	vertical-align: middle;
+  	letter-spacing: 0.07em;
+  	
+    border-radius: 9px;
+    background: #dbe1e5;
+    width: 140%;
+    height: 20px; 
+}
+
+// formatting copyright label
+.label_copyright {
+    font-family: DIN OT;
+    font-color: #000000;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: left;
+  	opacity: 0.27;
+}
+
+
+// TESTING HERE--------------------
