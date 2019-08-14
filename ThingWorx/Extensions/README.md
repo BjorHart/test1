@@ -12,3 +12,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
     background:none !important;
 }
 ```
+
+Under PlatformSubsystem -> Configuration -> Required string to connect with Google for Google widgets
+
+Add this: https://maps.googleapis.com/maps/api/js?key=AIzaSyDe6aXSu7syzUXH3ueUG2SwVhRfNijhBPw
