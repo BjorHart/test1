@@ -10,17 +10,12 @@
     #include "Wire.h"
 #endif
 
-// class default I2C address is 0x68
-// specific I2C addresses may be passed as a parameter here
-// AD0 low = 0x68 (default for SparkFun breakout and InvenSense evaluation board)
-// AD0 high = 0x69
 MPU6050 mpu;
-//MPU6050 mpu(0x69); // <-- use for AD0 high
 
 /* =========================================================================
    NOTE: In addition to connection 3.3v, GND, SDA, and SCL, this sketch
    depends on the MPU-6050's INT pin being connected to the Arduino's
-   external interrupt #0 pin. On the Arduino Uno and Mega 2560, this is
+   external interrupt #4 pin(Digital pin 7). On the Arduino Uno and Mega 2560, this is
    digital I/O pin 2.
  * ========================================================================= */
 
@@ -32,12 +27,6 @@ MPU6050 mpu;
 // Also note that yaw/pitch/roll angles suffer from gimbal lock (for
 // more info, see: http://en.wikipedia.org/wiki/Gimbal_lock)
 #define OUTPUT_READABLE_YAWPITCHROLL
-
-// uncomment "OUTPUT_TEAPOT" if you want output that matches the
-// format used for the InvenSense teapot demo
-//#define OUTPUT_TEAPOT
-
-
 
 // MPU control/status vars
 bool dmpReady = false;  // set true if DMP init was successful
@@ -57,7 +46,50 @@ volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin h
 
 void dmpDataReady() {
     mpuInterrupt = true;
+} 
+
+///////////////////////////////////   CONFIGURATION   /////////////////////////////
+
+int16_t ax, ay, az, gx, gy, gz;
+uint16_t num_readings = 100;
+
+void calibration(){
+  
+int16_t mean_ax, mean_ay, mean_az, mean_gx, mean_gy, mean_gz = 0;
+Serial.println("Calibrating....");
+for (int i = 0; i < num_readings; i++) {
+
+  mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+  mean_ax += ax;
+  mean_ay += ay;
+  mean_az += az;
+  mean_gx += gx;
+  mean_gy += gy;
+  mean_gz += gz;
+  
 }
+ mean_az = mean_az/num_readings;
+ mean_gx = mean_gx/num_readings;
+ mean_gy = mean_gy/num_readings;
+ mean_gz = mean_gz/num_readings;
+ 
+ mpu.setXAccelOffset(mean_ax);
+ mpu.setYAccelOffset(mean_ay);
+ mpu.setZAccelOffset(mean_az);
+ mpu.setXGyroOffset(mean_gx);
+ mpu.setYGyroOffset(mean_gy);
+ mpu.setZGyroOffset(mean_gz);
+
+ Serial.println(mean_ax);
+ Serial.println(mean_ay);
+ Serial.println(mean_az);
+ Serial.println(mean_gx);
+ Serial.println(mean_gy);
+ Serial.println(mean_gz);
+ 
+ Serial.println("Finished calibrating");
+}
+
 
 
 void rotationSensorSetup() {
@@ -72,31 +104,29 @@ void rotationSensorSetup() {
     // initialize serial communication
     // (115200 chosen because it is required for Teapot Demo output, but it's
     // really up to you depending on your project)
-    Serial.begin(115200);
+    Serial.begin(9600);
     
-    // while (!Serial); // wait for Leonardo enumeration, others continue immediately       // COMMENTED OUT --- MAY NEED TO BE THERE
+    // while (!Serial); // wait for Leonardo enumeration, others continue immediately       
 
     mpu.initialize();
- 
+     
     mpu.testConnection() ? F("MPU6050 connection successful") : F("MPU6050 connection failed");
 
     devStatus = mpu.dmpInitialize();
-
-    // supply your own gyro offsets here, scaled for min sensitivity
+    
+   //calibration();
+    
     mpu.setXGyroOffset(220);
     mpu.setYGyroOffset(76);
     mpu.setZGyroOffset(-85);
     mpu.setZAccelOffset(1788); // 1688 factory default for my test chip
-
+    
     // make sure it worked (returns 0 if so)
     if (!devStatus) {
       
-        mpu.setDMPEnabled(true);
-
-        
+        mpu.setDMPEnabled(true);        
         attachInterrupt(4, dmpDataReady, RISING);
         mpuIntStatus = mpu.getIntStatus();
-        
         dmpReady = true;
 
         // get expected DMP packet size for later comparison
@@ -105,7 +135,8 @@ void rotationSensorSetup() {
 }
 
 
-int rotSensorUpdate() {
+int rotationSensorUpdate() {
+
     // if programming failed, don't try to do anything
     if (!dmpReady) return;
 
@@ -116,7 +147,6 @@ int rotSensorUpdate() {
    
     mpuInterrupt = false;
     mpuIntStatus = mpu.getIntStatus();
-
     fifoCount = mpu.getFIFOCount();
 
     
