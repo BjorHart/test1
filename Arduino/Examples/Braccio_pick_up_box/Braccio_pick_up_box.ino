@@ -1,4 +1,4 @@
-/*
+  /*
   simpleMoves.ino
 
  This sketch shows how to move the Braccio to different positions

@@ -19,7 +19,7 @@ def run_simulation_continously(twin_runtime, print_step_output=True):
     # fromJson = json.loads(data_coming_in)
     # imported_array = pd.array([element for element in fromJson.values()])
     #format of simulation ['RotationB' 'RotationL' 'RotationM']
-    while time <= 9:
+    while time <= 15:
         # Getting the outputs for 0 time
         if time == 0:
             initial_output = [0.0] + twin_runtime.twin_get_outputs() ### API CALL
