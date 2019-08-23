@@ -24,8 +24,8 @@ MPU6050 mpu;
    digital I/O pin 2.
  * ========================================================================= */
 
-/*
 
+/*
 // uncomment "OUTPUT_READABLE_YAWPITCHROLL" if you want to see the yaw/
 // pitch/roll angles (in degrees) calculated from the quaternions coming
 // from the FIFO. Note this also requires gravity vector calculations.

@@ -9,6 +9,6 @@ void setup() {
 }
 void loop() {
   LoadCell.update(); // Get data from load cell
-  float i = LoadCell.getData(); // get output value
+  float i = -LoadCell.getData(); // get output value
   Serial.println(i); // print out the value to serial monitor
 }

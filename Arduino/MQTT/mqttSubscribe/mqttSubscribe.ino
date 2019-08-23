@@ -1,4 +1,5 @@
 //Subscribe function for deciding program
+/*
 #include <BridgeClient.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h> 
@@ -66,7 +67,7 @@ void jsonSerializer (int lower, int middle, int upper, int weight, int rotation)
   size_t n = serializeJson(doc, buffer); //Sends the serialized JSON string to the buffer, also calculates the byte size to optimize number of cpu cycles
   //serializeJson(doc, Serial);
 }
-*/
+
 //MQTT server connection
 void brokerConnection() {
   if (!client.connected()) {
@@ -84,25 +85,37 @@ void brokerPublish(char* value) {
     client.publish(outTopic, buffer, n);
  
 }
-*/
+
  
 //MQTT subscribe ()
 void brokerSubscribe() {
   client.subscribe(inTopic);
 }
-
-#include <YunClient.h>
+*/
+#include <BridgeClient.h>
 #include <PubSubClient.h>
+#include <BraccioRobot.h>
+#include <Servo.h>
 
-#define MQTT_SERVER "x.x.x.x"
+char const *inTopic = "Program";
 
-#define MQTT_CLIENTID "YUN-Sensor"
+#define MQTT_SERVER "195.159.164.54"
 
+#define MQTT_CLIENTID "Yun_Sandvika"
+
+char value;
+//String data;
 void callback(char* topic, byte* payload, unsigned int length) {
   // handle message arrived
+   for(int i = 0; i < length; i ++)
+  {
+    value = char(payload[i]);
+    //value = data.toInt();
+   }
+  //Serial.println(data);
 }
 
-YunClient yun;
+BridgeClient yun;
 PubSubClient mqtt(MQTT_SERVER, 1883, callback, yun);
 
 void setup()
@@ -110,12 +123,114 @@ void setup()
   Serial.begin(9600);
   Bridge.begin();
   if (mqtt.connect(MQTT_CLIENTID)) {
-    mqtt.publish("outTopic","hello world");
-    mqtt.subscribe("inTopic");
+    mqtt.subscribe(inTopic);
   }
+  BraccioRobot.init();
 }
 
 void loop()
 {
   mqtt.loop();
+  if (value == 'p'){
+    pause();
+  }
+  else if (value == 'a'){
+    program1();
+  }
+  else if (value == 'b'){
+    program2();
+  }
+  else if (value == 'c'){
+    program3();
+  }
+}
+Position pos;
+
+void program1(){
+  Serial.println("Program: Pick up box");
+  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 15);  
+  delay(300);
+  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,10), 15);
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,73), 15); 
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,73), 15);  
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,10), 15);  
+  delay(600);
+  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,10), 15);  
+  delay(2000);
+  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,10), 15);  
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154, 75, 4,8,90,73), 15);
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,73), 15);
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,10), 15);
+  delay(500);
+}
+
+void pause(){
+   Serial.println("PAUSE");
+   BraccioRobot.moveToPosition(pos.set(154, 85,80,97,90,73), 15);
+   delay(2000);
+}
+void program2(){
+  Serial.println("Program: Braccio flex");
+  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 40);  
+  delay(300);
+  BraccioRobot.moveToPosition(pos.set(154, 55, 110,97,90,73), 40);
+  delay(100);
+  BraccioRobot.moveToPosition(pos.set(154, 55, 110,180,90,73), 40); 
+  delay(300);
+  BraccioRobot.moveToPosition(pos.set(154,55,130,180,90,73), 40);  
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,55,130,85,90,73), 40);  
+  delay(100);
+  BraccioRobot.moveToPosition(pos.set(154,120,60,80,90,73), 40);  
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,150,25,30,90,73), 40);  
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154, 160, 0,0,90,73), 40);//plukker opp
+  delay(2000);
+  BraccioRobot.moveToPosition(pos.set(154, 130,50,75,90,73), 40);
+  delay(100);
+  BraccioRobot.moveToPosition(pos.set(154,100,150,160,90,73), 40);  
+  delay(400);
+  BraccioRobot.moveToPosition(pos.set(154,85,110,175,90,73), 40);  
+  delay(100);
+  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 40);
+  delay(100);
+  BraccioRobot.moveToPosition(pos.set(154,85,180,0,90,73), 40);
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,85,180,97,90,73), 40);
+  delay(200);
+  BraccioRobot.moveToPosition(pos.set(154,85,80,180,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 40);
+}
+
+void program3(){
+  Serial.println("Program: Braccio rotation");
+  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 25);  
+  delay(300);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 80,97,90,10), 25);
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 180,97,90,73), 25); 
+  delay(300);
+  BraccioRobot.moveToPosition(pos.set(180,85,180,10,90,73), 25);  
+  delay(10);
+  BraccioRobot.moveToPosition(pos.set(154,150,10,10,90,73), 25);  
+  delay(600);
+  BraccioRobot.moveToPosition(pos.set(50,150,10,10,90,73), 25);  
+  delay(2000);
+  BraccioRobot.moveToPosition(pos.set(50,85,80,97,90,73),25 );  
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,85,50,97,90,73), 25);
+  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,85,180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(180,85,180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 25);
+  delay(250);
 }

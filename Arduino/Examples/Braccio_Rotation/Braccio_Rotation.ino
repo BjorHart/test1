@@ -1,14 +1,3 @@
-  /*
-  simpleMoves.ino
-
- This sketch shows how to move the Braccio to different positions
-
- Created 01012019
- by Stefan Strömberg
-
- This example is in the public domain.
- */
-
 #include <BraccioRobot.h>
 #include <Servo.h>
 
@@ -36,29 +25,27 @@ void loop() {
   // M5=wrist rotation degrees. Allowed values from 0 to 180 degrees
   // M6=gripper degrees. Allowed values from 10 to 73 degrees. 10: the toungue is open, 73: the gripper is closed.
   //     (M1,  M2,  M3,  M4, M5,  M6)
-  //pos.set( 154, 85 , 80, 97,  90,  73);
-
   // Move the robot to the position with a specified speed between 20-200 degrees per second
-  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 15);  
+  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 25);  
   delay(300);
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,10), 15);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 80,97,90,10), 25);
   delay(500);
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,73), 15); 
-  delay(500);
-  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,73), 15);  
-  delay(500);
-  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,10), 15);  
+  BraccioRobot.moveToPosition(pos.set(50, 85, 180,97,90,73), 25); 
+  delay(300);
+  BraccioRobot.moveToPosition(pos.set(180,85,180,10,90,73), 25);  
+  delay(10);
+  BraccioRobot.moveToPosition(pos.set(154,150,10,10,90,73), 25);  
   delay(600);
-  //BraccioRobot.moveToPosition(pos.set(,90,90,90,50,10), 15);  
-  //Wait 1 second
-  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,10), 15);  
+  BraccioRobot.moveToPosition(pos.set(50,150,10,10,90,73), 25);  
   delay(2000);
-  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,10), 15);  
+  BraccioRobot.moveToPosition(pos.set(50,85,80,97,90,73),25 );  
   delay(500);
-  BraccioRobot.moveToPosition(pos.set(154, 75, 4,8,90,73), 15);
+  BraccioRobot.moveToPosition(pos.set(154,85,50,97,90,73), 25);
   delay(500);
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,73), 15);
-  delay(500);
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,10), 15);
-  delay(500);
+  BraccioRobot.moveToPosition(pos.set(154,85,180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(180,85,180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(50, 85, 180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 25);
+  delay(250);
 }
