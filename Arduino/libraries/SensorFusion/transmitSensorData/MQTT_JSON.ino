@@ -1,11 +1,11 @@
-#include <YunClient.h>
+#include <BridgeClient.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h> 
 
 //char* deviceId     = "SUMMERINTERNS"; // * set your device id (will be the MQTT client username) DO NOT NEED?
 //char* deviceSecret = "Passord"; // * set your device secret (will be the MQTT client password) DO NOT NEED?
-char* outTopic     = "Data"; // * MQTT channel where physical updates are published
-char* inTopic      = "inTopic"; // * MQTT channel where lelylan updates are received
+char const *outTopic     = "Data"; // * MQTT channel where physical updates are published
+char const *inTopic      = "inTopic"; // * MQTT channel where lelylan updates are received
 //char* clientId     = "Arduino1"; // * set a random string (max 23 chars, will be the MQTT client id) DO NOT NEED?
 
 byte server[] = { 195, 159, 164, 54 }; // MQTT server address
