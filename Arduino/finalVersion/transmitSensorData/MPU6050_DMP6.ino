@@ -1,4 +1,4 @@
-/*
+
 // I2Cdev and MPU6050 must be installed as libraries, or else the .cpp/.h files
 // for both classes must be in the include path of your project
 //#include "I2Cdev.h"
@@ -25,7 +25,7 @@ MPU6050 mpu;
  * ========================================================================= */
 
 
-/*
+
 // uncomment "OUTPUT_READABLE_YAWPITCHROLL" if you want to see the yaw/
 // pitch/roll angles (in degrees) calculated from the quaternions coming
 // from the FIFO. Note this also requires gravity vector calculations.
@@ -72,7 +72,7 @@ void rotationSensorSetup() {
     // initialize serial communication
     // (115200 chosen because it is required for Teapot Demo output, but it's
     // really up to you depending on your project)
-    //Serial.begin(115200);
+   // Serial.begin(9600);
     
     // while (!Serial); // wait for Leonardo enumeration, others continue immediately       // COMMENTED OUT --- MAY NEED TO BE THERE
 
@@ -139,4 +139,4 @@ int rotSensorUpdate() {
         return int((ypr[0]* 180/M_PI)); 
               
     }
-}*/
+}

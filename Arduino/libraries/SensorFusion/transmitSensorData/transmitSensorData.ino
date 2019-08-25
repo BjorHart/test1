@@ -24,7 +24,7 @@ void loop() {
 
  digitalWrite(13, 0); // LED OFF indicating in loop
  int a = rotationSensorUpdate();
- //MQTTSend(potSensorUpdate(0), potSensorUpdate(1), potSensorUpdate(2), weightSensorUpdate(), a);
- Serial.println(a);
+ MQTTSend(potSensorUpdate(0), potSensorUpdate(1), potSensorUpdate(2), weightSensorUpdate(), a);
+// Serial.println(a);
 //wdt_reset(); // If sending takes more than 1 second, the program is restarted, indicating a crash most likely in the 6-axis sensor
 }

@@ -14,7 +14,7 @@ void setup() {
   //wdt_enable(WDTO_1S);
   
   weightSensorSetup();
-  //rotationSensorSetup();
+  rotationSensorSetup();
   MQTTSetup();
   
 }
@@ -23,12 +23,17 @@ void loop() {
 
  //digitalWrite(13, 0);
  int a = 45;
- //rotSensorUpdate();
+ //int a = rotSensorUpdate();
  int lower = (potSensorUpdate(0)+3)*1.43;
  int middle = (potSensorUpdate(1))*1.43;
  int upper = (potSensorUpdate(2)-4)*1.43;;
+<<<<<<< HEAD
    
  MQTTSend(lower, middle, upper, weightSensorUpdate(), a);
  Serial.println(a);
+=======
+ 
+ MQTTSend(lower, middle, upper, weightSensorUpdate(), -a);
+>>>>>>> a7f62829343e532d8494e6f957374d71ae267493
  //wdt_reset(); // If sending takes more than 1 second, the program is restarted, indicating a crash most likely in the 6-axis sensor
 }
