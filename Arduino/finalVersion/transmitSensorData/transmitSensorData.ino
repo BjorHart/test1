@@ -25,9 +25,9 @@ void loop() {
  int a = 45;
  //rotSensorUpdate();
  int lower = (potSensorUpdate(0)+3)*1.43;
- int middle = (potSensorUpdate(1))*1.5;
+ int middle = (potSensorUpdate(1))*1.43;
  int upper = (potSensorUpdate(2)-4)*1.43;;
- 
+   
  MQTTSend(lower, middle, upper, weightSensorUpdate(), a);
  Serial.println(a);
  //wdt_reset(); // If sending takes more than 1 second, the program is restarted, indicating a crash most likely in the 6-axis sensor

@@ -10,5 +10,5 @@ void weightSensorSetup() {
 
 int weightSensorUpdate() {
   LoadCell.update(); // Get data from load cell
-  return -LoadCell.getData(); // get output value
+  return LoadCell.getData(); // get output value
 }
