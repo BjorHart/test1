@@ -72,7 +72,7 @@ void rotationSensorSetup() {
     // initialize serial communication
     // (115200 chosen because it is required for Teapot Demo output, but it's
     // really up to you depending on your project)
-   // Serial.begin(9600);
+    //Serial.begin(115200);
     
     // while (!Serial); // wait for Leonardo enumeration, others continue immediately       // COMMENTED OUT --- MAY NEED TO BE THERE
 
@@ -139,4 +139,4 @@ int rotSensorUpdate() {
         return int((ypr[0]* 180/M_PI)); 
               
     }
-}*
+}*/

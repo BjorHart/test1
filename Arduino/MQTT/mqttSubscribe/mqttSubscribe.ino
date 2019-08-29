@@ -33,7 +33,6 @@ void setup()
 
 void loop(){
   mqtt.loop();
-  //Serial.println(value);
   if (value == "pgram"){
     pause();
   }
@@ -54,9 +53,9 @@ void loop(){
 Position pos;
 
 void program1(){
-  //While true En verdi kan da breake ut
+  //Need to find out how to implement break functionality to work. Possibility to make a big while true (parameter) where the parameter is changed to false and true accordingly. 
   Serial.println("Program: Pick up box");
-  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 15);
+  BraccioRobot.moveToPosition(pos.set( 142, 85 , 80, 97,  90,  73), 15);
   mqtt.loop();
   if (value == "agram"){
     delay(300);
@@ -65,7 +64,7 @@ void program1(){
     loop();
     ////break;
   }
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,10), 15);
+  BraccioRobot.moveToPosition(pos.set(142, 85, 176,176,90,10), 15);
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -74,7 +73,7 @@ void program1(){
     loop();
     ////break;
   }
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,73), 15); 
+  BraccioRobot.moveToPosition(pos.set(142, 85, 176,176,90,73), 15); 
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -83,7 +82,7 @@ void program1(){
     loop();
     ////break;
   }
-  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,73), 15);  
+  BraccioRobot.moveToPosition(pos.set(142,75,4,8,90,73), 15);  
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -92,7 +91,7 @@ void program1(){
     loop();
     ////break;
   }
-  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,10), 15);
+  BraccioRobot.moveToPosition(pos.set(142,75,4,8,90,10), 15);
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -101,7 +100,7 @@ void program1(){
     loop();
     ////break;
   }
-  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,10), 15);  
+  BraccioRobot.moveToPosition(pos.set(142,85,80,97,90,10), 15);  
   mqtt.loop();
   if (value == "agram"){
     delay(2000);
@@ -110,7 +109,7 @@ void program1(){
     loop();
     //break;
   }
-  BraccioRobot.moveToPosition(pos.set(154,75,4,8,90,10), 15); 
+  BraccioRobot.moveToPosition(pos.set(142,75,4,8,90,10), 15); 
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -119,7 +118,7 @@ void program1(){
     loop();
     //break;
   } 
-  BraccioRobot.moveToPosition(pos.set(154, 75, 4,8,90,73), 15);
+  BraccioRobot.moveToPosition(pos.set(142, 75, 4,8,90,73), 15);
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -128,7 +127,7 @@ void program1(){
     loop();
     //break;
   }
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,73), 15);
+  BraccioRobot.moveToPosition(pos.set(142, 85, 176,176,90,73), 15);
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -138,7 +137,7 @@ void program1(){
     //break;
     
   }
-  BraccioRobot.moveToPosition(pos.set(154, 85, 178,178,90,10), 15);
+  BraccioRobot.moveToPosition(pos.set(142, 85, 176,176,90,10), 15);
   mqtt.loop();
   if (value == "agram"){
     delay(500);
@@ -151,7 +150,7 @@ void program1(){
 
 void pause(){
    Serial.println("PAUSE");
-   BraccioRobot.moveToPosition(pos.set(154, 85,80,97,90,73), 15);
+   BraccioRobot.moveToPosition(pos.set(142, 85,80,97,90,73), 15);
    mqtt.loop();
    if (value == "pgram"){
     delay(1000);
@@ -164,7 +163,7 @@ void pause(){
 
 void program2(){
   Serial.println("Program: Braccio flex");
-  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 40);
+  BraccioRobot.moveToPosition(pos.set( 142, 85 , 80, 97,  90,  73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(300);
@@ -172,7 +171,7 @@ void program2(){
   else {
     loop();
   }   
-  BraccioRobot.moveToPosition(pos.set(154, 55, 110,97,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142, 55, 110,97,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -180,7 +179,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154, 55, 110,180,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142, 55, 110,180,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(300);
@@ -188,7 +187,7 @@ void program2(){
   else {
     loop();
   }  
-  BraccioRobot.moveToPosition(pos.set(154,55,130,180,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,55,130,180,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(500);
@@ -196,7 +195,7 @@ void program2(){
   else {
     loop();
   }   
-  BraccioRobot.moveToPosition(pos.set(154,55,130,85,90,73), 40);  
+  BraccioRobot.moveToPosition(pos.set(142,55,130,85,90,73), 40);  
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -204,7 +203,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,120,60,80,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,120,60,80,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(500);
@@ -212,7 +211,7 @@ void program2(){
   else {
     loop();
   }   
-  BraccioRobot.moveToPosition(pos.set(154,150,25,30,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,150,25,30,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(500);
@@ -220,7 +219,7 @@ void program2(){
   else {
     loop();
   }   
-  BraccioRobot.moveToPosition(pos.set(154, 160, 0,0,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142, 160, 0,0,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(2000);
@@ -228,7 +227,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154, 130,50,75,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142, 130,50,75,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -236,7 +235,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,100,150,160,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,100,150,160,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(400);
@@ -244,7 +243,7 @@ void program2(){
   else {
     loop();
   }   
-  BraccioRobot.moveToPosition(pos.set(154,85,110,175,90,73), 40);  
+  BraccioRobot.moveToPosition(pos.set(142,85,110,175,90,73), 40);  
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -252,7 +251,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,85,80,97,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -260,7 +259,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,85,180,0,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,85,180,0,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(500);
@@ -268,7 +267,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,85,180,97,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,85,180,97,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(200);
@@ -276,7 +275,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,85,80,180,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,85,80,180,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -284,7 +283,7 @@ void program2(){
   else {
     loop();
   } 
-  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 40);
+  BraccioRobot.moveToPosition(pos.set(142,85,80,97,90,73), 40);
   mqtt.loop();
   if (value == "bgram"){
     delay(100);
@@ -296,7 +295,7 @@ void program2(){
 
 void program3(){
   Serial.println("Program: Braccio rotation");
-  BraccioRobot.moveToPosition(pos.set( 154, 85 , 80, 97,  90,  73), 25);
+  BraccioRobot.moveToPosition(pos.set( 142, 85 , 80, 97,  90,  73), 25);
   mqtt.loop();
   if (value == "cgram"){
     delay(300);
@@ -328,7 +327,7 @@ void program3(){
   else {
     loop();
   }    
-  BraccioRobot.moveToPosition(pos.set(154,150,10,10,90,73), 25);  
+  BraccioRobot.moveToPosition(pos.set(142,150,10,10,90,73), 25);  
   mqtt.loop();
   if (value == "cgram"){
     delay(600);
@@ -353,7 +352,7 @@ void program3(){
   else {
     loop();
   }  
-  BraccioRobot.moveToPosition(pos.set(154,85,50,97,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(142,85,50,97,90,73), 25);
   mqtt.loop();
   if (value == "cgram"){
     delay(500);
@@ -361,7 +360,7 @@ void program3(){
   else {
     loop();
   }  
-  BraccioRobot.moveToPosition(pos.set(154,85,180,0,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(142,85,180,0,90,73), 25);
   mqtt.loop();
   if (value == "cgram"){
     delay(2);
@@ -393,7 +392,7 @@ void program3(){
   else {
     loop();
   }  
-  BraccioRobot.moveToPosition(pos.set(154,85,80,97,90,73), 25);
+  BraccioRobot.moveToPosition(pos.set(142,85,80,97,90,73), 25);
   mqtt.loop();
   if (value == "cgram"){
     delay(300);
@@ -405,7 +404,7 @@ void program3(){
 
 void program4(){
   Serial.println("Program: Braccio Holo");
-  BraccioRobot.moveToPosition(pos.set( 154, 85 ,81, 0, 90, 72), 25);  
+  BraccioRobot.moveToPosition(pos.set( 142, 85 ,81, 0, 90, 72), 25);  
   mqtt.loop();
   if (value == "hgram"){
   delay(500);
