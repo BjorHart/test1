@@ -2,27 +2,23 @@
 Here is a short intro of this folders content
 
 ## List of topics
-1. [Topic 1 - *Documentation*](#of1)
-2. [Topic 2 - *Set Up*](#of2)
-3. [Topic 3 - *Challenges*](#of3)
-4. [Topic 4 - *Improvements*](#of3)
+1. [*Set Up*](#of1)
+2. [*Documentation*](#of2)
+3. [*Challenges and Improvements*](#of3)
 
 
 <a name="of1"></a>
-## Topic 1 - Documentation
+## Set Up
 
 
 <a name="of2"></a>
-## Topic 2 - Set Up
+## Documentation
 
 
 <a name="of3"></a>
-## Topic 3 - Challenges
+## Challenges and Improvements
 
 Deep lake
-
-<a name="of4"></a>
-## Topic 4 - Improvements
 
 
 
