@@ -6,32 +6,25 @@ Here is a short intro of this folders content
 2. [Topic 2 - *Set Up*](#of2)
 3. [Topic 3 - *Challenges*](#of3)
 4. [Topic 4 - *Improvements*](#of3)
-4. [Topic 4 - *..*](#of4)
-5. [Topic 5 - *..*](#of5)
 
 
 <a name="of1"></a>
-## Topic 1 - ..
+## Topic 1 - Documentation
 
 
 <a name="of2"></a>
-## Topic 2 - ..
+## Topic 2 - Set Up
 
 
 <a name="of3"></a>
-## Topic 3 - ..
+## Topic 3 - Challenges
 
 Deep lake
 
 <a name="of4"></a>
-## Topic 4 - ..
+## Topic 4 - Improvements
 
 
-
-<a name="of5"></a>
-## Topic 5 - ..
-
-blablabla
 
 
 ### Disclaimer
