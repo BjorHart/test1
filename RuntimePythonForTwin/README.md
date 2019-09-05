@@ -14,7 +14,7 @@ In the documentation section some key elements are described. See the python fil
 <a name="of1"></a>
 ## Set Up
 In order to do real time damage and stress calculations, the two scripts application.py and accumulatedDamage.py both need to be run. These however are run automatically by launching run.exe.
-These are found in the "runCleaned/Runtimefiles/BraccioRuntime" folder. 
+They are both found in the "runCleaned/Runtimefiles/BraccioRuntime" folder. 
 
 <a name="of2"></a>
 ## Documentation
