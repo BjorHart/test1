@@ -15,7 +15,17 @@ The folder contains three sub folders:
 
 <a name="of1"></a>
 ## Set Up
+In order to make changes or publish the Vuforia AR Experience you need to perform the following steps:
 
+1. Install [Vuforia Studio](https://www.ptc.com/en/products/augmented-reality/vuforia-studio "Vuforia Studio")
+2. Enter ´localhost:3000´ in your browser
+    * One could potentially run into troubles using Microsoft Edge, we do recommend using Google Chrome.
+    * The port number may differ depending on your Vuforia setup.
+3. Log in using the **Virtual Machine** Vuforia credentials
+4. Import the desired Project Version found in the *Projects* subfolder.
+    * Now you should be able to edit the Project by clicking on the project in the Vuforia Studio dashboard (the project will have the same name as the imported file)
+    * Always remember to add the right Vuforia Experience Server and Thingmark before publishing your experience!
+    * Always remember to export your edited Project, label it correctly, and upload it to Git!
 
 <a name="of2"></a>
 ## Documentation
