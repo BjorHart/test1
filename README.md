@@ -15,7 +15,7 @@ Below is a list of the folders followed by a short introduction to the content i
 7. [RuntimePythonForTwin](#of7)
 8. [Thingworx](#of8)
 9. [Vuforia](#of9)
-
+10. [Vuforia](#of10)
 
 <a name="of1"></a>
 ## Arduino
@@ -52,5 +52,8 @@ Below is a list of the folders followed by a short introduction to the content i
 <a name="of9"></a>
 ## Vuforia
 
+
+<a name="of10"></a>
+## PhysicalSetup
 
 blablabla
