@@ -6,7 +6,7 @@ The folder contains three sub folders:
 2. *Projects* - Contains all versions of both the iPad AR application and the Hololens AR application.
 3. *Thingmarks* - Contains relevant Thingmarks which are connected to the Vuforia Experience Server.
 
-#### *Before digging into our Vuforia Project we do **strongly recommend** to take the course [Fundamentals of AR Development with Vuforia Studio](https://www.ptcu.com/enrollment/student/fundamentals-of-ar-development-with-vuforia-studio) by PTC.*
+##### *Before digging into our Vuforia Project we do **strongly recommend** to take the course [Fundamentals of AR Development with Vuforia Studio](https://www.ptcu.com/enrollment/student/fundamentals-of-ar-development-with-vuforia-studio) by PTC.*
 ## List of topics
 1. [*Set Up*](#of1)
 2. [*Documentation*](#of2)
