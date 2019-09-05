@@ -1,18 +1,12 @@
 # Intro
 This foulder contains three subfolders:
-1. *learningData* - containing learning and validation data used to generate the dynamic rom in the twin builder extension Dynamic Rom Builder
+1. *learningData* - containing learning and validation data used to generate the dynamic rom in the Twin Builder extension Dynamic ROM Builder
 2. *FEM* - the workbench model of the robotic arm. Here the setup with all the rigid dynamic simulation cases can be viewed.
-3. *ROM* - the ROM used for real time simulation
+3. *ROM* - the ROM used for real time simulation and a pdf with intro on how to use the Dynamic ROM Builder.
 
 ## List of topics
-1. [*Set Up*](#of1)
-2. [*Documentation*](#of2)
-3. [*Challenges and Improvements*](#of3)
-
-
-<a name="of1"></a>
-## Set Up
-There is no specific setup needed. 
+1. [*Documentation*](#of2)
+2. [*Challenges and Improvements*](#of3)
 
 <a name="of2"></a>
 ## Documentation
