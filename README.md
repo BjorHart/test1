@@ -1,6 +1,9 @@
 # Summer-Intern-Project-2019
 This repo is for the Summer Interns 2019 and their robotic arm project.
 
+The repo contains folders with essential documentation and setup instructions for all major parts of the project.
+Below is a list of the folders followed by a short introduction to the content in each folder for faster navigation.
+
 
 ## List of topics
 1. [Topic 1 - *..*](#of1)
