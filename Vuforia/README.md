@@ -34,7 +34,10 @@ In order to make changes or publish the Vuforia AR Experience you need to perfor
 <a name="of3"></a>
 ## Challenges and Improvements
 
-Deep lake
+* Time Series Charts
+    - The Time Series Charts has proven to be a difficult feature to manage in Vuforia Studio. After doing some research on PTC´s community we found clear signs that the Time Series Chart currently is under heavy limitations. Although you can customize a chart visually, there are few features for auto-scaling, plotting multiple data points, auto-refreshing, etc.. 
+    - It will be difficult to improove the Time Series Chart until Vuforia brings a update, we therefore recommend shying away from using this feature for the time being.
+* 
 
 
 
