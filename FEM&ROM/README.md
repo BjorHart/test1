@@ -22,7 +22,6 @@ At first, all parts of the robotic arm were condensed, and all joints used as in
 This however was too complex for the ROM builder to give satisfactory results when validated and long simulation and expansion-times were experienced. This led to the use of only base, lower and middle joints in the ROM generation process in order to reduce the overall complexity.
 Hotspot analysis showed stress concentraions beiing the highest in the "lower arm", so all other parts were modelled as rigid.
 
-This leads to inputs to the ROM Builder beiing: base, lower and middle joint rotations, and outputs beiing stresses at the two hot spots in the lower arm.
 
 A total of 9 learning datasets were used, with a timestep of 0.05 seconds and a total simulation time of 50 seconds. The overall process can be viewed closer in a pdf in the ROM-folder.
 
