@@ -18,16 +18,17 @@ These are found in the "runCleaned/Runtimefiles/BraccioRuntime" folder.
 
 <a name="of2"></a>
 ## Documentation
-[application.py]
+[*application.py*]
 The application.py script runs the braccio dynamic ROM as a ".twin"-file. All operations on the ".twin" are based on the "twinRuntime" library provided by XXXXXXXXXXXXXXXXXX. The twin_runtime_core function twin_simulate() is used to simulate the ROM one timestep (0.05 s) for each iteration.
 Output data from the simulation is both sent to the IOT platform, and stored locally for damage accumulation calculation.
 
 Real time butterworth filtering of the incoming sensor data is done by the help of the IIR2filter library. Data is received and sent using standard MQTT calls/protocol.
 
-[accumulatedDamage.py]
+[*accumulatedDamage.py*]
 Stress data from simulation is imported from a .csv into a python list. Accumulated damage calculation based on rainflow cycle counting, goodman mean stress correction and palmgren miners rule is applied. Results are sent to the IOT platform every 5 seconds.
 
-From data stored
+
+
 <a name="of3"></a>
 ## Challenges and Improvements
 
