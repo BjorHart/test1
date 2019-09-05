@@ -1,34 +1,59 @@
 # Summer-Intern-Project-2019
 This repo is for the Summer Interns 2019 and their robotic arm project.
 
+The repo contains folders with essential documentation and setup instructions for all major parts of the project.
+Below is a list of the folders followed by a short introduction to the content in each folder for faster navigation.
+
 
 ## List of topics
-1. [Topic 1 - *..*](#of1)
-2. [Topic 2 - *..*](#of2)
-3. [Topic 3 - *..*](#of3)
-4. [Topic 4 - *..*](#of4)
-5. [Topic 5 - *..*](#of5)
-
+1. [Arduino](#of1)
+2. [Branding](#of2)
+3. [CAD](#of3)
+4. [FEM&ROM](#of4)
+5. [paho.mqtt.python](#of5)
+6. [Processing](#of6)
+7. [RuntimePythonForTwin](#of7)
+8. [Thingworx](#of8)
+9. [Vuforia](#of9)
+10. [Vuforia](#of10)
 
 <a name="of1"></a>
-## Topic 1 - ..
+## Arduino
 
 
 <a name="of2"></a>
-## Topic 2 - ..
-
+## Branding
 
 <a name="of3"></a>
-## Topic 3 - ..
+## CAD
 
-Deep lake
+
 
 <a name="of4"></a>
-## Topic 4 - ..
+## FEM&ROM
 
 
 
 <a name="of5"></a>
-## Topic 5 - ..
+## paho.mqtt.python
+
+<a name="of6"></a>
+## Processing
+
+
+
+<a name="of7"></a>
+## RuntimePythonForTwin
+
+
+<a name="of8"></a>
+## Thingworx
+
+<a name="of9"></a>
+## Vuforia
+
+
+<a name="of10"></a>
+## PhysicalSetup
 
 blablabla
