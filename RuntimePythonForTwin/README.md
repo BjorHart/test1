@@ -14,7 +14,7 @@ In the documentation section some key elements are described. See the python fil
 <a name="of1"></a>
 ## Set Up
 In order to do real time damage and stress calculations, the two scripts application.py and accumulatedDamage.py both need to be run. These however are run automatically by launching run.exe.
-These are found in the "runCleaned/Runtimefiles/BraccioRuntime" folder. 
+They are both found in the "runCleaned/Runtimefiles/BraccioRuntime" folder. 
 
 <a name="of2"></a>
 ## Documentation
@@ -34,7 +34,7 @@ Stress data from simulation is imported from a .csv into a python list. Accumula
 1. The logged stress data are overwritten if the script is stopped and re-run, this extends to the accumulated damage calculation. In order to cope with the case of stopped simulation, this needs to be adressed for the accurate continued damage calculation.
 2. The stress data from the ROM compared to Ansys rigid dynamics result with identical output can be seen in the figure below. Not flawless!
 3. A discovery was made that if the braccio stops at the 0 degree position for all joints, the stress data will stabilize before starting to osccillate, the reason for this has not been determined.	 
-
+4. Remaining lifetime calculation is based on a total lifetime that is randomly chosen.
 
 
 

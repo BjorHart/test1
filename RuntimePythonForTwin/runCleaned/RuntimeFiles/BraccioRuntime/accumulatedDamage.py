@@ -8,8 +8,8 @@ import os
 CUR_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 
 def run_damage_calculation():
-    S_u = 50 * 10**6
-    S_y =  47* 10**6
+    S_u = 50 * 10**6 #ultimate tensile strength
+    S_y =  47* 10**6 # yield strength
     time = 0
     a = 0
     remaining_life_in_years = 14.57 # dummy
