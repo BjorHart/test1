@@ -10,6 +10,7 @@ Here is a short intro of this folders content
 <a name="of1"></a>
 ## Set Up
 
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/SensorArduino/sensor_setup.pdf)
 
 <a name="of2"></a>
 ## Documentation
