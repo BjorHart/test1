@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from IIR2Filter import IIR2Filter
 
 #----------------------------------------------------------
-#filterproperties for butterworth lowpass filter
+#filterproperties for butterworth lowpass filter, sample by sample filtering
 order = 6
 cutoff = 0.06
 filterType = 'lowpass'
@@ -24,11 +24,14 @@ pd.set_option('precision', 12)
 pd.set_option('display.max_columns', 20)
 pd.set_option('expand_frame_repr', False)
 
-#
+#allocate data arrays to be sent and received
 dataList = [[0.0, 0, 0]]
 weight_payloaded = [[0.0]]
 listToSend = [[0.0, 0]]
 weight_adjusted = np.array([0.0])
+
+#----------------------------------------------------------
+#The run_simulation_continously function does all operations to the robotic arm .twin, in order to do real time simulation.
 
 def run_simulation_continously(Client, twin_runtime, print_step_output=True):
     output_names = list(twin_runtime.twin_get_output_names())
@@ -39,18 +42,14 @@ def run_simulation_continously(Client, twin_runtime, print_step_output=True):
     sim_input_list = []
     time = 0
     filtered = [0, 0, 0]
-    # fromJson = json.loads(data_coming_in)
-    # imported_array = pd.array([element for element in fromJson.values()])
-    #format of simulation ['RotationB' 'RotationL' 'RotationM']
+    #format of simulation inputs ['RotationB' 'RotationL' 'RotationM']
     while True:
         # Getting the outputs for 0 time
         if time == 0:
             initial_output = [0.0] + twin_runtime.twin_get_outputs() ### API CALL
             sim_output_list.append(initial_output)
             initalClockTime = t.time()
-            # Gets the stop time of the current simulation step
 
-            #insert code for receiving data, add code to store input
 
         if (time + initalClockTime - t.time() <= 0.05):
             time_end = time
@@ -73,22 +72,19 @@ def run_simulation_continously(Client, twin_runtime, print_step_output=True):
         #Send outputs to thingworx
             # send data:
             listToSend[0] =(twin_runtime.twin_get_outputs())
-            #print(listToSend[0])
-            #weight_adjusted_value = weight_adjusted[0] + 2.2 * testArray[2]
+            #print(listToSend[0])'
 
-
-
-
+            #send values for H1 and H2 stress values, scaled to MPa and rounded to 3 decimals
             send_dict = {}
             send_dict["H1"] = round(listToSend[0][0]*10**(-6), 3)
             send_dict["H2"] = round(listToSend[0][1]*10**(-6), 3)
             #print("adjusted: ", weight_adjusted_value)
-            #send_dict["adjusted_weight"] = weight_adjusted_value
+        # convert to Json.dump(listToSend)
             data = json.dumps(send_dict)
             finaldata = data
             #print(finaldata)
             Client.publish("Stress", finaldata)
-            # convert to Json.dump(listToSend)
+
         # Reads and stores the simulation results for the current timestep
             sim_output = [time_end] + twin_runtime.twin_get_outputs()  ### API CALL
             sim_output_list.append(sim_output)
@@ -96,15 +92,16 @@ def run_simulation_continously(Client, twin_runtime, print_step_output=True):
             writeFile.flush()
             time+= 0.05
 
-            #Trenger ikke funksjonen under?
+            #Dont need below if-sentence, but good for validating purposes
             if print_step_output is True:
                 out_list = twin_runtime.twin_get_outputs() ### API CALL
                 for output in out_list:
                     print(output)
+
     # Returns a dataframe with the simulation results for all timesteps
     output_names.insert(0, 'Time')
     return pd.DataFrame(sim_output_list, columns=output_names, dtype=float), sim_input_list
-
+#----------------------------------------------------------
 
 
 def run():
@@ -127,23 +124,18 @@ def run():
 
 
     print('Running Braccio.twin...')
+
+    #conncect to MQTT broker
     client = paho.Client()
-    # client.on_subscribe = on_subscribe
     client.on_message = on_message
     client.connect('195.159.164.54')
     client.subscribe('Data')
     client.loop_start()
     output_dataframe, inputArray = run_simulation_continously(client,twin_runtime_braccio, print_step_output=True)
-    #print("Publ")
-    #client.publish("Stress",listToSend[0])
+
     # Closing the TWIN model
     twin_runtime_braccio.twin_close()
 
-    # for list in output_dataframe:
-    #     L1.append(list[1])
-    #     print(list[0])
-    #     L2.append(list[2])
-    #print("output_data:", output_dataframe)
 
     dfList = output_dataframe.values.tolist()
     firstList = [i[1] for i in dfList]
@@ -157,6 +149,7 @@ def run():
     # plt.plot(L2)
     plt.show()
 
+#Mqtt connection stuff
 def on_message(client, userdata, msg):
     payload = (json.loads(msg.payload))
     payloaded = [payload.get("rotation")+0.0, payload.get("lower"), payload.get("middle")]
