@@ -1,5 +1,10 @@
 # Intro
-Here is a short intro of this folders content
+The folder focuses on the Vuforia part of the project and contains all relevant information regarding our work done in Vuforia Studio.
+
+The folder contains three sub folders:
+1. *Graphics* - Contains graphics used in iPad AR application
+2. *Projects* - Contains all versions of both the iPad AR application and the Hololens AR application.
+3. *Thingmarks* - Contains relevant Thingmarks which are connected to the Vuforia Experience Server.
 
 ## List of topics
 1. [*Set Up*](#of1)
