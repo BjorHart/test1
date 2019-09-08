@@ -12,7 +12,6 @@ The folder contains three sub folders:
 2. [*Documentation*](#of2)
 3. [*Challenges and Improvements*](#of3)
 
-
 <a name="of1"></a>
 ## Set Up
 In order to make changes or publish the Vuforia AR Experience you need to perform the following steps:
@@ -33,7 +32,7 @@ In order to make changes or publish the Vuforia AR Experience you need to perfor
 ## Documentation
 
 ### iPad AR Experience
-The iPad AR Experience is designed to be easy to manage and easy to navigate through. It consists of a navigation bar consisting of three tabs and one button, *HOME*,*STATISTICS*, *MOVEMENTS* and *CONTACT US*.
+The iPad AR Experience is designed to be easy to manage and easy to navigate through. It consists of a navigation bar with three tabs and one button, *HOME*, *STATISTICS*, *MOVEMENTS* and *CONTACT US*.
 
 - *HOME*: This tab is mainly used for displaying live motion, observing live data and inspecting parts. By clicking on the Robot Arm a live display will appear at the top of the screen, as well as a gauge showing stress at the lower hotspot. By clicking on one or multiple motors and sensor housings a highlight feature will be triggerd. This can be undone by clicking on the selected part once again. 
 - *STATISTICS*: This tab is used for displaying historic data for the different joints. It is designed with focus towards easy navigation between different joints, however the graph is not the best looking as for now, a more detailed explanation of this can be found under **Challenges and Improvements**.
@@ -48,9 +47,3 @@ The iPad AR Experience is designed to be easy to manage and easy to navigate thr
     - It will be difficult to improove the Time Series Chart until Vuforia brings a update, we therefore recommend shying away from using this feature for the time being.
 * Joint movement
     - One of our big challenges during was to enable the Robot Arms ability to rotate about joints in Vuforia Studio. We did however find a very good solution to this. By using the PTC software [Creo Parametric](https://www.ptc.com/en/products/cad/creo/parametric) we were able to divide our Robot Arm into Assemblies and Subassemblies which the Vuforia Studio software recognized, thereby we could divide our Robot Arm into different items and then implement application parameters to the desired items. A more detailed guide of this process can be found [here](https://community.ptc.com/t5/Vuforia-Studio/Mechanism-Concept-in-Vuforia-Studio-How-to-make-rotation-more/td-p/552743).
-
-
-
-
-### Disclaimer
-The following code was entirely or partly copied:
