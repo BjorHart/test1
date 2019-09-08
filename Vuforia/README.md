@@ -39,6 +39,9 @@ The iPad AR Experience is designed to be easy to manage and easy to navigate thr
 - *MOVEMENTS*: This tab is used for playing desired movements. It consists of four buttons, where three plays different movements and one for stopping a movement.
 - *CONTACT US*: This button redirects the user to EDR & Medeso´s home page. 
 
+### Hololens AR Experience
+Martinhooo skriv noe lurt her pls
+
 <a name="of3"></a>
 ## Challenges and Improvements
 
