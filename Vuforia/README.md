@@ -34,11 +34,12 @@ In order to make changes or publish the Vuforia AR Experience you need to perfor
 
 ### iPad AR Experience
 The iPad AR Experience is designed to be easy to manage and easy to navigate through. It consists of a navigation bar consisting of three tabs and one button, *HOME*,*STATISTICS*, *MOVEMENTS* and *CONTACT US*.
-    - *HOME*: This tab is mainly used for displaying live motion, observing live data and inspecting parts. By clicking on the Robot Arm a live display will appear at the top of the screen, as well as a gauge showing stress at the lower hotspot. By clicking on one or multiple motors and sensor housings a highlight feature will be triggerd. This can be undone by clicking on the selected part once again. 
-    - *STATISTICS*: This tab is used for displaying historic data for the different joints. It is designed with focus towards easy navigation between different joints, however the graph is not the best looking as for now, a more detailed explanation of this can be found under **Challenges and Improvements**.
-    - *MOVEMENTS*: This tab is used for playing desired movements. It consists of four buttons, where three plays different movements and one for stopping a movement.
-    - *CONTACT US*: This button redirects the user to EDR & Medeso´s home page. 
-    
+
+- *HOME*: This tab is mainly used for displaying live motion, observing live data and inspecting parts. By clicking on the Robot Arm a live display will appear at the top of the screen, as well as a gauge showing stress at the lower hotspot. By clicking on one or multiple motors and sensor housings a highlight feature will be triggerd. This can be undone by clicking on the selected part once again. 
+- *STATISTICS*: This tab is used for displaying historic data for the different joints. It is designed with focus towards easy navigation between different joints, however the graph is not the best looking as for now, a more detailed explanation of this can be found under **Challenges and Improvements**.
+- *MOVEMENTS*: This tab is used for playing desired movements. It consists of four buttons, where three plays different movements and one for stopping a movement.
+- *CONTACT US*: This button redirects the user to EDR & Medeso´s home page. 
+
 <a name="of3"></a>
 ## Challenges and Improvements
 
