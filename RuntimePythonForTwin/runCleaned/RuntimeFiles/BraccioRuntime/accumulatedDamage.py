@@ -13,7 +13,7 @@ def run_damage_calculation():
     time = 0
     a = 0
     remaining_life_in_years = 14.57 # dummy
-    while True:
+    while True: #while true makes the loop run until interrupted
         #set start time
         if time == 0 and a == 0:
             tot_run_file = open(CUR_DIR + "\\tot_run.csv", 'r')
@@ -52,6 +52,7 @@ def run_damage_calculation():
             writeTotRun.flush()
             print("total runtime: ", tot_runtime)
             print("current runtime: ", time)
+
             # construct lists to store fraction for each cycle and extract cycles
             extractH1 = rainflow.extract_cycles(H1float)
             extractH2 = rainflow.extract_cycles(H2float)
@@ -91,8 +92,8 @@ def run_damage_calculation():
             print(remaining_life_in_years, "remaining life!")
             running_cost = tot_damage[1]*(10**6)*0.4
             send_dict = {}
-            send_dict["DH1"] = round(tot_damage[0]*10**5, 3)
-            send_dict["DH2"] = round(tot_damage[1]*10**5, 3)
+            send_dict["DH1"] = round(tot_damage[0]*10**3, 3) #damage is scaled to gived changeing values in the IOT platform
+            send_dict["DH2"] = round(tot_damage[1]*10**3, 3)
             send_dict["CurrentRuntime"] = round(time/60, 2)
             send_dict["tot_runtime"] = round(tot_runtime/60, 2)
             send_dict["remaining_life"] = round(remaining_life_in_years, 3)

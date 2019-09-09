@@ -150,7 +150,7 @@ void program1(){
 
 void pause(){
    Serial.println("PAUSE");
-   BraccioRobot.moveToPosition(pos.set(142, 85,80,97,90,73), 15);
+   BraccioRobot.moveToPosition(pos.set(142, 85,170,178,90,73), 15);    /*(pos.set(142, 85,80,97,90,73), 15);*/
    mqtt.loop();
    if (value == "pgram"){
     delay(1000);

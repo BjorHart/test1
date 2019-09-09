@@ -1,9 +1,16 @@
 # Summer-Intern-Project-2019
 This repo is for the Summer Interns 2019 and their robotic arm project.
 
-The repo contains folders with essential documentation and setup instructions for all major parts of the project.
+The repo contains folders with essential documentation and setup instructions for all major parts of the project. 
+There is also a "Quick setup"-guide for launching the Digital Twin, provided that all other elements are configured correctly.
 Below is a list of the folders followed by a short introduction to the content in each folder for faster navigation.
 
+#### "Quick setup"-guide
+If both arduino boards have all pins correctly placed (according to the documentation) and the "braccio-board" is connected to the right YUN, the following steps are required to launch the complete application:
+
+1. Plug arduinos and braccio into stikkontakt. Wait for blue lights to appear on both arduino YUN boards, if they dont appear, see further documentation for setup.
+2. On the virtual machine; run "twin.exe" located on the "Summer interns" folder. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
+3.  
 
 ## List of topics
 1. [Arduino](#of1)
@@ -26,12 +33,15 @@ Below is a list of the folders followed by a short introduction to the content i
 
 <a name="of3"></a>
 ## CAD
-
+Includes various CAD files for the robotic arm:
+1. Spaceclaim files for both complete model and idealized model for simulation.
+2. Creo files for export to Vuforia
+3. Stl files for 3D-printed parts
 
 
 <a name="of4"></a>
 ## FEM&ROM
-
+Contains files and documentation of solver used and reduced order model (ROM) generation process.
 
 
 <a name="of5"></a>
@@ -44,7 +54,7 @@ Below is a list of the folders followed by a short introduction to the content i
 
 <a name="of7"></a>
 ## RuntimePythonForTwin
-
+Includes files and documentation for the python scripts running the ROM of the robotic arm and performing damage calculation.
 
 <a name="of8"></a>
 ## Thingworx
