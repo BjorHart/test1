@@ -25,7 +25,7 @@ If both arduino boards have all pins correctly placed (according to the document
 
 <a name="of1"></a>
 ## Arduino
-
+Contains all the code used on the two Arduinos, from the libraries used, the code, to how the physical setup was done
 
 <a name="of2"></a>
 ## Branding
