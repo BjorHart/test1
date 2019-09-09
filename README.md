@@ -23,39 +23,39 @@ If both arduino boards have all pins correctly placed (according to the document
 8. [Vuforia](#of8)
 9. [Physical setup](#of9)
 
-a name=of1a
+<a name="of1"></a>
 ## Arduino
 Contains all the code used on the two Arduinos, from the libraries used, the code, to how the physical setup was done
 
-a name=of2a
+<a name="of2"></a>
 ## Branding
 
-a name=of3a
+<a name="of3"></a>
 ## CAD
 Includes various CAD files for the robotic arm
 1. Spaceclaim files for both complete model and idealized model for simulation.
 2. Creo files for export to Vuforia
 3. Stl files for 3D-printed parts
 
-
-a name=of4a
+<a name="of4"></a>
 ## FEM&ROM
 Contains files and documentation of solver used and reduced order model (ROM) generation process.
 
 
-a name=of5a
+<a name="of5"></a>
 ## paho.mqtt.python
 
 
-a name=of6a
+<a name="of6"></a>
 ## RuntimePythonForTwin
 Includes files and documentation for the python scripts running the ROM of the robotic arm and performing damage calculation.
 
-a name=of7a
+<a name="of7"></a>
 ## Thingworx
 
-a name=of8a
+<a name="of8"></a>
 ## Vuforia
 Includes all versions of the Vuforia projects for both IPad and Hololens. Also AR graphics and Thingmarks are included. 
-a name=of9a
+
+<a name="of9"></a>
 ## PhysicalSetup
