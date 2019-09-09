@@ -22,7 +22,6 @@ If both arduino boards have all pins correctly placed (according to the document
 7. [RuntimePythonForTwin](#of7)
 8. [Thingworx](#of8)
 9. [Vuforia](#of9)
-10. [Vuforia](#of10)
 
 <a name="of1"></a>
 ## Arduino
@@ -66,4 +65,3 @@ Includes files and documentation for the python scripts running the ROM of the r
 <a name="of10"></a>
 ## PhysicalSetup
 
-blablabla

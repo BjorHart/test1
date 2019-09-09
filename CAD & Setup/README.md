@@ -35,6 +35,15 @@ The installation of the weight sensors is dependent on a custom made wood box as
 <a name="of2"></a>
 ## Documentation
 
+### Creo Illustrate
+Creo Illustrate was used to create the animation sequences for the Hololens experience. 
+
+How to is best described by https://www.youtube.com/watch?v=5NsiQn4nOPE
+
+Create multiple sequences and publish it as a ‘.pvz' file. Extract the file to see the ‘.pvi’ files which describes the sequences and upload these ‘.pvi’ files separately to Vuforia studio. Further explanation is provided in the Hololens documentation. 
+With an update of Vuforia studio there may be enough to upload the ‘.pvz’ file as a resource, however this did not work in August 19. 
+
+
 
 <a name="of3"></a>
 ## Challenges and Improvements
