@@ -60,7 +60,6 @@ There are some challenges and proposed improvements worth to notice.
 - Proposed fixes: Ensure that all the physical cables are connected properly and correctly. May need to implement a filter which disregards large jumps in values (example a jump of more than 30 degrees). As mentioned may the calculation made to compensate for the incorrect sensor readings be changed to be more correct.
 
 4. *Rotation sensor(IMU-MPU6050)*
-
 The sensor works great for 10-15 minutes before it crashes(Hangs up in a while loop). This is a known issue with this particular sensor. A reason for this is believed to be in the Wire.h library, however the time haven’t been there to debug this particular library.
 Adding two 2K pull up resistors on the SCL and SDA lines made the sensor work for a bit longer, however its not reliable. If you make it work with this sensor we would appreciate to know what the issue was.
 
