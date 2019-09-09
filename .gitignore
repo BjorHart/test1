@@ -1,2 +1,5 @@
 # Removing vscode files
 .vscode
+.DS_Store
+.idea/
+**.iml*
