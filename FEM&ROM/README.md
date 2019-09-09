@@ -29,7 +29,7 @@ A total of 9 learning datasets were used, with a timestep of 0.05 seconds and a 
 4. If under operation, the physical robotic arm stops at zero degrees for all joints for a longer period of time, the real-time stress values from the ROM will at first converge and stabilize, but then after a while start to oscillate.
 5. Accuracy of the ROM is seen to vary depending on the input rotations. The below figure shows the correlation between simulated stresses for the same input in Ansys and the ROM. The plot is for a arbitrary representative operation of the robotic arm.
 
-![alt text] (https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/FEM%26ROM/ROM/ComparisonPlot.PNG)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/FEM%26ROM/ROM/ComparisonPlot.PNG)
 
 
 
