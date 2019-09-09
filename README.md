@@ -6,7 +6,7 @@ There is also a Quick setup-guide for launching the Digital Twin, provided that 
 Below is a list of the folders followed by a short introduction to the content in each folder for faster navigation.
 
 #### Quick setup-guide
-If both arduino boards have all pins correctly placed (according to the documentation) and the braccio-board is connected to the right YUN, the following steps are required to launch the complete application
+If both Arduino boards have all pins correctly placed (according to the documentation) and the braccio-board is connected to the right YUN, the following steps are required to launch the complete application
 
 1. Plug both Arduinos and the Braccio robotic arm into a power outlet. Wait for blue lights to appear on both Arduino Yún boards (indicating connected to WIFI), if they dont appear, see further documentation for setup [here](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/Arduino).
 2. On the virtual machine; run run.bat located in the Summer interns folder. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
@@ -34,6 +34,8 @@ Includes various CAD files for the robotic arm
 1. Spaceclaim files for both complete model and idealized model for simulation.
 2. Creo files for export to Vuforia
 3. Stl files for 3D-printed parts
+
+
 The folder also contain a guide on the physical components used and the assembly and set up of physical robotic arm with sensors. 
 
 <a name="of4"></a>
@@ -50,4 +52,4 @@ Contains documentation for the Thingworx platform, including the custom made ext
 
 <a name="of7"></a>
 ## Vuforia
-Includes all versions of the Vuforia projects for both IPad and Hololens. Also AR graphics and Thingmarks are included. 
+Includes all versions of the Vuforia projects for both iPad and Hololens. Also AR graphics and Thingmarks are included. 
