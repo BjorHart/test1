@@ -8,8 +8,8 @@ Below is a list of the folders followed by a short introduction to the content i
 #### "Quick setup"-guide
 If both arduino boards have all pins correctly placed (according to the documentation) and the "braccio-board" is connected to the right YUN, the following steps are required to launch the complete application:
 
-1. Plug arduinos and braccio into stikkontakt. Wait for blue lights to appear on both arduino YUN boards, if they dont appear, see further documentation for setup.
-2. On the virtual machine; run "twin.exe" located on the "Summer interns" folder. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
+1. Plug arduinos and braccio into a power outlet. Wait for blue lights to appear on both arduino YUN boards (indicating connected to WIFI), if they dont appear, see further documentation for setup.
+2. On the virtual machine; run "run.bat" located on the "Summer interns" folder. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
 3.  
 
 ## List of topics
