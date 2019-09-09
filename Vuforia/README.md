@@ -64,18 +64,18 @@ The development of the Hololens experience is in many ways the same as for the i
 
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/documentation_images/event_printscreen.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Vuforia/documentation_images/event_printscreen.png)
 
 
 
 
 This was also included in the function header.
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/documentation_images/functionHeader_printscreen.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Vuforia/documentation_images/functionHeader_printscreen.png)
 
 * Switching between sequences from Creo Illustrate. When uploading a resource as a ‘.pvz’ file made in Creo Illustrate one can select between different sequences made for the particular resource. This works perfectly in the ‘Preview’ mode. However, this did not work when publishing it on the Hololens. A workaround for this was to convert the ‘.pvz’ file from Creo Illustrate to a ‘.zip’ file, simply by adding ‘.zip’ to the file name. Next was to extract the ‘.zip’ which shows the ‘.pvi’ files inside. Upload these ‘.pvi’ files to Vuforia studio and switch between these to play different sequences e.g. by clicking.
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/documentation_images/function_printscreen.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Vuforia/documentation_images/function_printscreen.png)
 
 
 ```javascript
@@ -98,7 +98,7 @@ $scope.$applyAsync()
 
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/documentation_images/appEvent_printscreen.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Vuforia/documentation_images/appEvent_printscreen.png)
 
 
 
@@ -106,13 +106,13 @@ $scope.$applyAsync()
 
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/documentation_images/markerWidth_printscreen.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Vuforia/documentation_images/markerWidth_printscreen.png)
 
 
 * Example with making 3D image visible
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/documentation_images/function2_printscreen.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Vuforia/documentation_images/function2_printscreen.png)
 
 ```javascript
 $scope.view.wdg[‘name of uploaded image file']['visible'] = true;
