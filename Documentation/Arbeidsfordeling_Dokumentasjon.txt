@@ -1,0 +1,10 @@
+Ar holo - Martin
+Ar pad - Paal
+Arduino – Christian, Martin(rotasjonssensor)
+Thingworx – Christian 
+Mqtt – Christian 
+RuntimeTwin - Bjørn
+Cad/FEM - Bjørn
+Creo – Martin (illustrate), Paal(parametric)
+3D print + fysisk montering av arm og sensorer – Christian (evt Bjørn)
+homeReadMe – Bjørn
