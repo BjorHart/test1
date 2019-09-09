@@ -41,7 +41,9 @@ The iPad AR Experience is designed to be easy to manage and easy to navigate thr
 
 ### Hololens AR Experience
 ***Disassembly***
+
 Click on one of the parts ‘middle arm’, ‘lower arm’, ‘upper servo’ or ‘middle servo’ to highlight and isolate the specific part. This can also be done with voice commands by saying their respective names. The specifications of the servos is displayed when highlighting one of the servos. A map of voice commands together with their functions is displayed above the robot arm to assist, this is made for first time users.  The model is reset to default view by double clicking on the pointer/cursor.
+
 ***Live***
 Change to the 'live' view with the voice command ‘home’. In this view one can observe the real time movement of the physical twin in the same way as on the iPad experience.
 
@@ -56,7 +58,7 @@ Change to the 'live' view with the voice command ‘home’. In this view one ca
 * Alert Triggering
     - We currently have a issue regarding our exceeding stress limits alert. The issue does however not lie in the Vuforia Studio implementation but in the weight sensor. The alert is supposed to be triggered when the weight sensor exceeds a given treshold, which in practice does not work so well. This comes as an effect of the weight sensors placement, as well as the robot arm shifting its weight when moving.
 
-### Hololens AR Experience
+#### Hololens specific issues
 
 The development of the Hololens experience is in many ways the same as for the iPad. However, there are some differences and known issues:
 
