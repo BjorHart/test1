@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<line_styles_file>
+  <line_styles
+    id="f2bbdd82-825e-4ca4-a4ef-9c27aa5c205d">
+    <line_style
+      origin="standard"
+      stipple="0"
+      newStipple="true"
+      indices="0;"/>
+    <line_style
+      origin="standard"
+      stipple="1"
+      newStipple="true"/>
+    <line_style
+      origin="standard"
+      stipple="3"
+      newStipple="true"/>
+    <line_style
+      origin="standard"
+      stipple="5"
+      newStipple="true"/>
+    <line_style
+      origin="standard"
+      stipple="6"
+      newStipple="true"
+      indices="1;"/>
+    <line_style
+      origin="standard"
+      stipple="7"
+      newStipple="true"/>
+    <line_style
+      origin="standard"
+      stipple="2"
+      newStipple="true"
+      indices="2;"/>
+    <line_style
+      origin="standard"
+      stipple="4"
+      newStipple="true"/>
+  </line_styles>
+</line_styles_file>

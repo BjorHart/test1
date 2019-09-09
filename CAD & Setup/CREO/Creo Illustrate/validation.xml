@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<import3di>
+  <sbom>
+    <name>Illustration</name>
+    <instance id="0">
+      <name>robot_arm.asm</name>
+      <ebom pvcidpath=":0"/>
+      <instance id="0">
+        <name>LOWER_PLATE.PRT</name>
+        <ebom pvcidpath=":0/40"/>
+      </instance>
+      <instance id="1">
+        <name>ROBOT_ARM_SUB4.ASM</name>
+        <ebom pvcidpath=":0/41"/>
+        <instance id="0">
+          <name>BASE_W_ENGINE.ASM</name>
+          <ebom pvcidpath=":0/41/40"/>
+          <instance id="0">
+            <name>BASE.PRT</name>
+            <ebom pvcidpath=":0/41/40/40"/>
+          </instance>
+          <instance id="1">
+            <name>BASE_ENGINE.PRT</name>
+            <ebom pvcidpath=":0/41/40/41"/>
+          </instance>
+          <instance id="2">
+            <name>LOWER_ENGINE.PRT</name>
+            <ebom pvcidpath=":0/41/40/44"/>
+          </instance>
+        </instance>
+        <instance id="1">
+          <name>ROBOT_ARM_SUB3.ASM</name>
+          <ebom pvcidpath=":0/41/41"/>
+          <instance id="0">
+            <name>LOWER_ARM_W_ENGINE.ASM</name>
+            <ebom pvcidpath=":0/41/41/42"/>
+            <instance id="0">
+              <name>LOWER_ARM.PRT</name>
+              <ebom pvcidpath=":0/41/41/42/40"/>
+            </instance>
+            <instance id="1">
+              <name>MIDDLE_ENGINE.PRT</name>
+              <ebom pvcidpath=":0/41/41/42/41"/>
+            </instance>
+          </instance>
+          <instance id="1">
+            <name>ROBOT_ARM_SUB2.ASM</name>
+            <ebom pvcidpath=":0/41/41/43"/>
+            <instance id="0">
+              <name>MIDDLE_ARM_W_ENGINE.ASM</name>
+              <ebom pvcidpath=":0/41/41/43/41"/>
+              <instance id="0">
+                <name>MIDDLE_ARM.PRT</name>
+                <ebom pvcidpath=":0/41/41/43/41/40"/>
+              </instance>
+              <instance id="1">
+                <name>UPPER_ENGINE.PRT</name>
+                <ebom pvcidpath=":0/41/41/43/41/42"/>
+              </instance>
+            </instance>
+            <instance id="1">
+              <name>ROBOT_ARM_SUB1.ASM</name>
+              <ebom pvcidpath=":0/41/41/43/45"/>
+              <instance id="0">
+                <name>UPPER_ARM_W_ENGINE.ASM</name>
+                <ebom pvcidpath=":0/41/41/43/45/40"/>
+                <instance id="0">
+                  <name>UPPER_ARM.PRT</name>
+                  <ebom pvcidpath=":0/41/41/43/45/40/40"/>
+                </instance>
+                <instance id="1">
+                  <name>GRIPPER_ENGINE2.PRT</name>
+                  <ebom pvcidpath=":0/41/41/43/45/40/41"/>
+                </instance>
+              </instance>
+              <instance id="1">
+                <name>GRIPPER_W_ENGINE.ASM</name>
+                <ebom pvcidpath=":0/41/41/43/45/42"/>
+                <instance id="0">
+                  <name>GRIPPER.PRT</name>
+                  <ebom pvcidpath=":0/41/41/43/45/42/40"/>
+                </instance>
+                <instance id="1">
+                  <name>GRIPPER_ENGINE.PRT</name>
+                  <ebom pvcidpath=":0/41/41/43/45/42/41"/>
+                </instance>
+              </instance>
+            </instance>
+          </instance>
+        </instance>
+      </instance>
+      <instance id="2">
+        <name>MIDDLE_HOUSING.PRT</name>
+        <ebom pvcidpath=":0/45"/>
+      </instance>
+      <instance id="3">
+        <name>UPPER_HOUSING.PRT</name>
+        <ebom pvcidpath=":0/55"/>
+      </instance>
+    </instance>
+  </sbom>
+  <figures>
+    <figure>
+      <name>disassembly2</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>middleServo</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>upperServo</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>lowerArm</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>middleArm</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>wristServo3</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>disassembly3</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+    <figure>
+      <name>wristServo4</name>
+      <itemlist>
+        <columns>
+          <column name="ITEM_SORT_ORDER" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_INDEX" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_NAME" category="SYSTEM_VARIABLES"/>
+          <column name="ITEM_COUNT" category="SYSTEM_VARIABLES"/>
+        </columns>
+      </itemlist>
+    </figure>
+  </figures>
+</import3di>

@@ -1,0 +1,61 @@
+proepview - Version : parametric5000 Creo 5.1 - F000 (15.1.0.28) x86e_win64
+Copyright (C) 2000-2018 PTC Inc. All Rights Reserved.
+
+Recipe file: C:/Program Files/PTC/Creo 5.0.4.0/Common Files/text/prodview/export_pvs.rcp
+Source file: C:/Users/PaalArthurSchjelderu/Desktop/Git/Summer-Intern-Project-2019/CAD/CREO_v2/robot_arm_v2.asm.2
+Output file: C:/Users/PAALAR~1/AppData/Local/Temp/c1n61ep4/robot_arm_v2.pvs
+Processing robot_arm_v2.asm : ...
+Processing lower_plate.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing robot_arm_v2_sub1.asm : ...
+Processing base_w_engine.asm : ...
+Processing base.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing base_engine.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing lower_engine.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... base_w_engine.asm : COMPLETE
+Processing robot_arm_v2_sub2.asm : ...
+Processing lower_arm_w_engine.asm : ...
+Processing lower_arm.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing middle_engine.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... lower_arm_w_engine.asm : COMPLETE
+Processing robot_arm_v2_sub3.asm : ...
+Processing middle_arm_w_engine_housing.asm : ...
+Processing middle_arm_w_engine.asm : ...
+Processing middle_arm.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing upper_engine.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... middle_arm_w_engine.asm : COMPLETE
+Processing middle_housing.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... middle_arm_w_engine_housing.asm : COMPLETE
+Processing robot_arm_v2_sub4.asm : ...
+Processing upper_arm_w_engine_housing.asm : ...
+Processing robot_arm_sub1.asm : ...
+Processing upper_arm_w_engine.asm : ...
+Processing upper_arm.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing gripper_engine2.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... upper_arm_w_engine.asm : COMPLETE
+Processing gripper_w_engine.asm : ...
+Processing gripper.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+Processing gripper_engine.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... gripper_w_engine.asm : COMPLETE
+... robot_arm_sub1.asm : COMPLETE
+Processing upper_housing.prt : COMPLETE
+Getting Mass Properties : COMPLETE
+... upper_arm_w_engine_housing.asm : COMPLETE
+... robot_arm_v2_sub4.asm : COMPLETE
+... robot_arm_v2_sub3.asm : COMPLETE
+... robot_arm_v2_sub2.asm : COMPLETE
+... robot_arm_v2_sub1.asm : COMPLETE
+... robot_arm_v2.asm : COMPLETE
+Generating Output : COMPLETE

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff
+  xmlns="urn:oasis:names:tc:xliff:document:1.2"
+  version="1.2">
+  <file
+    original="Illustration.c3di"
+    datatype="plaintext"
+    source-language="en"
+    target-language="en">
+    <header>
+      <tool
+        tool-id="urn:x-ptc:creo-illustrate"
+        tool-name="Creo 6.0.0.0"
+        tool-version="13.0.0.24"/>
+      <note>PTC XLIFF Translation Document</note>
+      <DocumentMetaData:metadata
+        add-to-dictionary="no"
+        xmlns:DocumentMetaData="http://www.arbortext.com/namespace/DocumentMetaData"/>
+    </header>
+    <body/>
+  </file>
+</xliff>
