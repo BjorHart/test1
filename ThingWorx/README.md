@@ -33,8 +33,9 @@ To make the extension work must an API-key be connected to the Thingworx platfor
 Regarding adding a new robotic arm is it just to duplicate the MQTT_Duplicate Thing and then modify it to correspond to the new robotic arm.  Create a new valuestream for the robotic arm. Then you duplicate the mockup_popup_v4 and connect everything to the new Thing. 
 <a name="of2"></a>
 ## Documentation
-Documentation about the Mashups, Things etc.
+Documentation about the Mashups, Things etc. Add something about how the data is received in the Things and mapped onto properties. Clarify which properties that are real data and which ones that are hardcoded. Explain the MQTT configuration briefly. Add some short details about the mashup.
 More documentation needed here (Paal?)
+Also need to clean up on Thingworx and put everything into a project. 
 
 <a name="of3"></a>
 ## Challenges and Improvements
@@ -42,4 +43,6 @@ There is a problem when using both the custom gauges (Progress bar widget) and L
 
 The autoscaling of the charts are not working properly, and are not filling out the available space. 
 
-The charts are sometimes very slow or contains wrong data. This can be fixed by going into the Thing that send the data and deleting (flush database) all or some of the data in the valuestream. This is done in Services -> PurgeAllPropertyHistory or PurgePropertyHistory. 
+The charts are sometimes very slow or contains wrong data. This can be fixed by going into the Thing that send the data and deleting (flush database) all or some of the data in the valuestream. This is done in Services -> PurgeAllPropertyHistory or PurgePropertyHistory.
+
+Probably more challenges we could add here.

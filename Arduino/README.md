@@ -47,8 +47,6 @@ The transmitSensorData contains the code used by the Arduino connected to all th
 - anomalyDetection.ino - Meant to be used to see if it possible to do some anomaly detection on the Arduino (not used).
 
 
-!!!!! Need to fill in more here?
-
 <a name="of3"></a>
 ## Challenges and Improvements
 There are some challenges and proposed improvements worth to notice.
@@ -65,6 +63,12 @@ There are some challenges and proposed improvements worth to notice.
 
 The sensor works great for 10-15 minutes before it crashes(Hangs up in a while loop). This is a known issue with this particular sensor. A reason for this is believed to be in the Wire.h library, however the time haven’t been there to debug this particular library.
 Adding two 2K pull up resistors on the SCL and SDA lines made the sensor work for a bit longer, however its not reliable. If you make it work with this sensor we would appreciate to know what the issue was.
+
+5. *No blue light on the Arduinos*
+In case where there is no blue light or the blue light is blinking for more than 1 minute do the Arduinos have a network connection problem. This can be fixed by ensuring that the Arduinos are connected to the correct network and are close enough to the router. 
+
+6. *No data is sent from the Arduino*
+If the Arduinos are connected to a network and there is still no data. Check that both the Arduinos and Thingworx are set up to be connected to the MQTT Broker (click save on the MQTT_Duplicate and see a green icon on the top left in Thingworx) running on one of the Arduinos. If the connection is correct, try uploading the code to the Arduino with all the sensors again. It is possible to check if there is data sent with an app also (just search for MQTT on an App Store or the web) and input the same settings as on the Arduinos/Thingworx (Default: 195.159.164.54, port: 1883, Topic: Data).
 
 Relevant thread:
 
