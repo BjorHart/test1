@@ -65,22 +65,18 @@ When triggering functions with ‘Click’ in the Hololens the function is not t
 
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/event_printscreen.png)
 
 
 
 
 This was also included in the function header.
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/functionHeader_printscreen.png)
 
 Switching between sequences from Creo Illustrate. When uploading a resource as a ‘.pvz’ file made in Creo Illustrate one can select between different sequences made for the particular resource. This works perfectly in the ‘Preview’ mode. However, this did not work when publishing it on the Hololens. A workaround for this was to convert the ‘.pvz’ file from Creo Illustrate to a ‘.zip’ file, simply by adding ‘.zip’ to the file name. Next was to extract the ‘.zip’ which shows the ‘.pvi’ files inside. Upload these ‘.pvi’ files to Vuforia studio and change between these to play different sequences e.g. by clicking.
 
 
-
-
-
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)
-
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/function_printscreen.png)
 
 
 
@@ -101,11 +97,7 @@ When triggering functions with voice commands or gestures, the function needs to
 
 
 
-
-
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)
-
-
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/appEvent_printscreen.png)
 
 
 
@@ -113,17 +105,16 @@ It’s important that the marker width corresponds to the printed marker to make
 
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/markerWidth_printscreen.png)
 
 
 Example with making 3D image visible
 
 
-![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Arduino/Setup_and_libraries/sensor_setup_png.png)
+![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/function2_printscreen.png)
 
 
-
-  $scope.view.wdg[‘name of uploaded image file']['visible'] = true;
+$scope.view.wdg[‘name of uploaded image file']['visible'] = true;
 
 
 
