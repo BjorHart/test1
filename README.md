@@ -60,7 +60,7 @@ Includes files and documentation for the python scripts running the ROM of the r
 
 <a name="of9"></a>
 ## Vuforia
-
+Includes all versions of the Vuforia projects for both IPad and Hololens. Also AR graphics and Thingmarks are included. 
 
 <a name="of10"></a>
 ## PhysicalSetup
