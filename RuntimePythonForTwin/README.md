@@ -19,7 +19,7 @@ They are both found in the "runCleaned/Runtimefiles/BraccioRuntime" folder.
 <a name="of2"></a>
 ## Documentation
 #### *application.py*
-The application.py script runs the braccio dynamic ROM as a ".twin"-file. All operations on the ".twin" are based on the "twinRuntime" library provided by XXXXXXXXXXXXXXXXXX. The twin_runtime_core function twin_simulate() is used to simulate the ROM one timestep (0.05 s) for each iteration.
+The application.py script runs the braccio dynamic ROM as a ".twin"-file. All operations on the ".twin" are based on the "twinRuntime" library. The twin_runtime_core function twin_simulate() is used to simulate the ROM one timestep (0.05 s) for each iteration.
 Output data (stress at given hotspots) from the simulation is both sent to the IOT platform, and stored locally for damage accumulation calculation.
 
 Real time butterworth filtering of the incoming sensor data is done by the help of the IIR2filter library. Data is received and sent using standard MQTT calls/protocol.
@@ -32,11 +32,11 @@ Stress data from simulation is imported from a .csv into a python list. Accumula
 <a name="of3"></a>
 ## Known Challenges and Improvements
 1. The logged stress data are overwritten if the script is stopped and re-run, this extends to the accumulated damage calculation. In order to cope with the case of stopped simulation, this needs to be adressed for the accurate continued damage calculation.
-2. The stress data from the ROM compared to Ansys rigid dynamics result with identical output can be seen in the figure below. Not flawless!
+2. The stress data from the ROM compared to Ansys rigid dynamics result with identical input can be seen in the figure below. Not flawless!
 3. A discovery was made that if the braccio stops at the 0 degree position for all joints, the stress data will stabilize before starting to osccillate, the reason for this has not been determined.	 
-4. Remaining lifetime calculation is based on a total lifetime that is randomly chosen.
+4. Remaining lifetime calculation a dummy calculation for display purposes.
 
 
 
 ### Disclaimer
-The code in this folder was entirely or partly copied from previous EDR work and/or other online sources.
+The code in this folder was entirely or partly copied from previous EDR Medeso work and/or other online sources.
