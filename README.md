@@ -18,10 +18,10 @@ If both arduino boards have all pins correctly placed (according to the document
 3. [CAD](#of3)
 4. [FEM&ROM](#of4)
 5. [paho.mqtt.python](#of5)
-6. [Processing](#of6)
-7. [RuntimePythonForTwin](#of7)
-8. [Thingworx](#of8)
-9. [Vuforia](#of9)
+6. [RuntimePythonForTwin](#of6)
+7. [Thingworx](#of7)
+8. [Vuforia](#of8)
+9. [Physical setup](#of9)
 
 <a name="of1"></a>
 ## Arduino
@@ -46,22 +46,18 @@ Contains files and documentation of solver used and reduced order model (ROM) ge
 <a name="of5"></a>
 ## paho.mqtt.python
 
+
 <a name="of6"></a>
-## Processing
-
-
-
-<a name="of7"></a>
 ## RuntimePythonForTwin
 Includes files and documentation for the python scripts running the ROM of the robotic arm and performing damage calculation.
 
-<a name="of8"></a>
+<a name="of7"></a>
 ## Thingworx
 
-<a name="of9"></a>
+<a name="of8"></a>
 ## Vuforia
 Includes all versions of the Vuforia projects for both IPad and Hololens. Also AR graphics and Thingmarks are included. 
 
-<a name="of10"></a>
+<a name="of9"></a>
 ## PhysicalSetup
 
