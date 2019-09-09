@@ -62,12 +62,9 @@ There are some challenges and proposed improvements worth to notice.
 4. *Rotation sensor(IMU-MPU6050)*
 The sensor works great for 10-15 minutes before it crashes(Hangs up in a while loop). This is a known issue with this particular sensor. A reason for this is believed to be in the Wire.h library, however the time haven’t been there to debug this particular library.
 Adding two 2K pull up resistors on the SCL and SDA lines made the sensor work for a bit longer, however its not reliable. If you make it work with this sensor we would appreciate to know what the issue was.
-
 Relevant thread:
-
 https://www.bountysource.com/issues/35448341-mpu6050-with-dmp-active-hangs-indefinitely-using-arduino-wire-library
-
-This can be avoided by using the complementary filter which do not utilize the on board DPU. However, the complementary filter to not give a yaw measurement. 
+This can be avoided by using the complementary filter which do not utilize the on board DPU. However, the complementary filter do not give a yaw measurement. 
 
 5. *No blue light on the Arduinos*
 In case where there is no blue light or the blue light is blinking for more than 1 minute do the Arduinos have a network connection problem. This can be fixed by ensuring that the Arduinos are connected to the correct network and are close enough to the router. 
