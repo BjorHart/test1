@@ -72,24 +72,26 @@ The development of the Hololens experience is in many ways the same as for the i
 This was also included in the function header.
 ![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/functionHeader_printscreen.png)
 
-* Switching between sequences from Creo Illustrate. When uploading a resource as a ‘.pvz’ file made in Creo Illustrate one can select between different sequences made for the particular resource. This works perfectly in the ‘Preview’ mode. However, this did not work when publishing it on the Hololens. A workaround for this was to convert the ‘.pvz’ file from Creo Illustrate to a ‘.zip’ file, simply by adding ‘.zip’ to the file name. Next was to extract the ‘.zip’ which shows the ‘.pvi’ files inside. Upload these ‘.pvi’ files to Vuforia studio and change between these to play different sequences e.g. by clicking.
+* Switching between sequences from Creo Illustrate. When uploading a resource as a ‘.pvz’ file made in Creo Illustrate one can select between different sequences made for the particular resource. This works perfectly in the ‘Preview’ mode. However, this did not work when publishing it on the Hololens. A workaround for this was to convert the ‘.pvz’ file from Creo Illustrate to a ‘.zip’ file, simply by adding ‘.zip’ to the file name. Next was to extract the ‘.zip’ which shows the ‘.pvi’ files inside. Upload these ‘.pvi’ files to Vuforia studio and switch between these to play different sequences e.g. by clicking.
 
 
 ![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/function_printscreen.png)
 
 
-
+```javascript
 $scope.view.wdg[‘Name of model‘][‘sequence'] = ‘Path to .pvi file’;
+```
 
 The program needs time to load the next sequence. Thats why a timeout was added before ‘playAll’ was triggered.
 
+```javascript
 $timeout(function() {
 $scope.$broadcast(‘app.view[‘Name of view’].wdg[‘Name of model’].svc.playAll');
 $scope.$applyAsync()
 }
 , ‘timeout period in ms’);
 };
-
+```
 
 * When triggering functions with voice commands or gestures, the function needs to be an application event. In addition, ‘viewCtrl.’ needs to be added in front of the function name.
    No change in the JS script is needed.
@@ -112,9 +114,9 @@ $scope.$applyAsync()
 
 ![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/Documentation/hololens_doc_img/function2_printscreen.png)
 
-
+```javascript
 $scope.view.wdg[‘name of uploaded image file']['visible'] = true;
-
+```
 
 
 Apart from this a lot of information can be found in the javascript and in the PTC community forums
