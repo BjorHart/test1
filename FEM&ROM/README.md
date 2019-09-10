@@ -32,7 +32,3 @@ A total of 9 learning datasets were used, with a timestep of 0.05 seconds and a 
 ![alt text](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/blob/master/FEM%26ROM/ROM/ComparisonPlot.PNG)
 
 
-
-
-### Disclaimer
-The following code was entirely or partly copied:
