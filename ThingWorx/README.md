@@ -33,6 +33,7 @@ To make the extension work must an API-key be connected to the Thingworx platfor
 Regarding adding a new robotic arm is it just to duplicate the MQTT_Duplicate Thing and then modify it to correspond to the new robotic arm.  Create a new valuestream for the robotic arm. Then you duplicate the mockup_popup_v4 and connect everything to the new Thing. 
 <a name="of2"></a>
 ## Documentation
+
 Documentation about the Mashups, Things etc. Add something about how the data is received in the Things and mapped onto properties. Clarify which properties that are real data and which ones that are hardcoded. Explain the MQTT configuration briefly. Add some short details about the mashup.
 More documentation needed here (Paal?)
 Also need to clean up on Thingworx and put everything into a project. 

@@ -35,6 +35,9 @@ The physical components used in this project are listed below:
 - [2 Micro-USB Cables](https://www.kjell.com/no/produkter/data-og-nettverk/kabler-og-adaptere/usb/usb-kabler/micro-usb-kabel-1-m-p68687)
 - [The housings for the sensors](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/CAD/Housings)
 
+
+The housings/ cases for the sensors are custom made for the purpose of fitting on the robotic arm. The grooves for the upper and middle housing are made a little bit bigger in all directions to ensure that it fits to the slots on the robotic arm and the there is space for the Epoxy glue. The circumference of the lower housing is a bit smaller to ensure that there is space for it in the slot we use. We also made covers for the upper and middle housings which at the current setup is not mounted to make it easier to get to the sensors.
+
 <a name="of3"></a>
 ## Challenges and Improvements
 
