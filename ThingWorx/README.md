@@ -43,10 +43,11 @@ There is 3 mashups used to show the data these are, mockup_v3 (The home/ main ma
 
 <a name="of3"></a>
 ## Challenges and Improvements
+1. *Refresh rate of page* - 
 There is a problem when using both the custom gauges (Progress bar widget) and Label chart in the same mashup (even with a popup) due to the fact that auto refresh needs to be 1 second or higher for the chart to be working properly. If the popup with live data (gauges) is not updating properly (in other words if it stutters) must the TargetWindow found in navigation-54 be changed to something other than Modal Popup.
 
-The autoscaling of the charts are not working properly, and are not filling out the available space. 
+2. *Charts in the Mashup* - The autoscaling of the charts are not working properly, and are not filling out the available space. The charts are also sometimes very slow or contains wrong data. Both of this can temporarily be fixed by going into the Thing that sends the data (default MQTT_duplicate) and deleting all (flush the database) some of the data in the valuestream. This is done in Services -> PurgeAllPropertyHistory or PurgePropertyHistory.
 
-The charts are sometimes very slow or contains wrong data. This can be fixed by going into the Thing that send the data and deleting (flush database) all or some of the data in the valuestream. This is done in Services -> PurgeAllPropertyHistory or PurgePropertyHistory.
+3. *Responsive design* - The pages are not responsive since the Thingworx version used is 8.3. Responsive pages are implemented in 8.4 and newer but implementing responsive design would need a complete redesign of the mashups to make it work. 
 
-The pages are not responsive since the Thingworx version used is 8.3. Responsive pages are implemented in 8.4 and newer but implementing responsive design would need a complete redesign of the mashups to make it work. 
+4. *Hardcoded properties* - As mentioned above are some of the properties hardcoded, this could potentially be fixed by implementing code for getting the IP address from the Arduino, GPS position and if the robotic arm is running or not. 
