@@ -41,4 +41,4 @@ The housings/ cases for the sensors are custom made for the purpose of fitting o
 <a name="of3"></a>
 ## Challenges and Improvements
 
-We have experienced a lot of challenges when assembling and attaching the sensors to the robotic arm, so be prepared that this could take time and that you probably need a few tries before it works as wanted. Feel free to contact us if you are considering assembling a new robotic arm (highly recommended because of the complicated process and since it is difficult to explain with words).
+We have experienced a lot of challenges when assembling and attaching the sensors to the robotic arm, so be prepared that this could take time and that you probably need a few tries before it works as wanted. Feel free to contact us if you are considering assembling a new robotic arm (highly recommended because of the complicated process and difficulty to explain it in this guide).
