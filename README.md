@@ -9,7 +9,7 @@ Below is a list of the folders followed by a short introduction to the content i
 If both Arduino boards have all pins correctly placed (according to the documentation) and the braccio-board is connected to the right YUN, the following steps are required to launch the complete application
 
 1. Plug both Arduinos and the Braccio robotic arm into a power outlet. Wait for blue lights to appear on both Arduino Yún boards (indicating connected to WIFI), if they dont appear, see further documentation for setup [here](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/Arduino).
-2. On the virtual machine; run run.bat located in the Summer interns folder. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
+2. On the virtual machine; run [run.bat](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master) found above. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
 3.  Grab a tablet or a Hololens, scan the Thingmark (number 34592:1) and start viewing the Digital Twin.  Go to [this web page](http://40.115.24.34:8080/Thingworx/Runtime/index.html#mashup=mockup_v3&forceClose=true&__fromNextGen=7d195fde-35e2-4e1c-8932-2aaecc90e408) and view the webapp for the Digital Twin.
 
 ## List of topics
