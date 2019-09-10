@@ -82,7 +82,7 @@ This was also included in the function header.
 $scope.view.wdg[‘Name of model‘][‘sequence'] = ‘Path to .pvi file’;
 ```
 
-The program needs time to load the next sequence. Thats why a timeout was added before ‘playAll’ was triggered.
+* The program needs time to load the next sequence. Thats why a timeout was added before ‘playAll’ was triggered.
 
 ```javascript
 $timeout(function() {
