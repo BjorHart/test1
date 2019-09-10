@@ -18,10 +18,8 @@ Here is a short intro of this folders content
 <a name="of3"></a>
 ## Challenges and Improvements
 
-Deep lake
 
 
 
 
 ### Disclaimer
-The following code was entirely or partly copied:
