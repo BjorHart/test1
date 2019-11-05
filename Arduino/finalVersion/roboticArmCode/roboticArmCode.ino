@@ -5,7 +5,7 @@
 
 char const *inTopic = "Program";
 
-#define MQTT_SERVER "195.159.164.54"
+#define MQTT_SERVER "40.115.24.34"
 
 #define MQTT_CLIENTID "Yun_Sandvika"
 
