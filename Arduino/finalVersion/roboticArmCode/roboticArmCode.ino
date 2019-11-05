@@ -5,7 +5,7 @@
 
 char const *inTopic = "Program";
 
-#define MQTT_SERVER "195.159.164.54"
+#define MQTT_SERVER "40.115.24.34"
 
 #define MQTT_CLIENTID "Yun_Sandvika"
 
@@ -150,7 +150,7 @@ void program1(){
 
 void pause(){
    Serial.println("PAUSE");
-   BraccioRobot.moveToPosition(pos.set(142, 85,80,97,90,73), 15);
+   BraccioRobot.moveToPosition(pos.set(142, 85, 176,176,90,10), 15);
    mqtt.loop();
    if (value == "pgram"){
     delay(1000);

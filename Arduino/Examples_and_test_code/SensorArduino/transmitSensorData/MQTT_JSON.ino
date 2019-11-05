@@ -8,7 +8,7 @@ char const *outTopic     = "Data"; // * MQTT channel where physical updates are 
 char const *inTopic      = "inTopic"; // * MQTT channel where lelylan updates are received
 //char* clientId     = "Arduino1"; // * set a random string (max 23 chars, will be the MQTT client id) DO NOT NEED?
 
-byte server[] = { 195, 159, 164, 54 }; // MQTT server address 172.20.10.7 10.20.49.107
+byte server[] = { 40, 115, 24, 34 }; // MQTT server address 172.20.10.7 10.20.49.107
 //char* payload  = "{""Sensor_1: 128 ""}"; // Used for testing 
 char buffer[256];
 
