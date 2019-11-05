@@ -92,8 +92,8 @@ def run_damage_calculation():
             print(remaining_life_in_years, "remaining life!")
             running_cost = tot_damage[1]*(10**6)*0.4
             send_dict = {}
-            send_dict["DH1"] = round(tot_damage[0]*10**3, 3) #damage is scaled to gived changeing values in the IOT platform
-            send_dict["DH2"] = round(tot_damage[1]*10**3, 3)
+            send_dict["DH1"] = round(tot_damage[0]*10**6, 3) #damage is scaled to gived changeing values in the IOT platform
+            send_dict["DH2"] = round(tot_damage[1]*10**6, 3)
             send_dict["CurrentRuntime"] = round(time/60, 2)
             send_dict["tot_runtime"] = round(tot_runtime/60, 2)
             send_dict["remaining_life"] = round(remaining_life_in_years, 3)
