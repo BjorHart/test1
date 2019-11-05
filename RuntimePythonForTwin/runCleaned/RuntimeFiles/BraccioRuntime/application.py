@@ -128,7 +128,7 @@ def run():
     #conncect to MQTT broker
     client = paho.Client()
     client.on_message = on_message
-    client.connect('195.159.164.54')
+    client.connect('40.115.24.34')
     client.subscribe('Data')
     client.loop_start()
     output_dataframe, inputArray = run_simulation_continously(client,twin_runtime_braccio, print_step_output=True)
@@ -159,4 +159,4 @@ def on_message(client, userdata, msg):
 
 
 
-#run()
+run()

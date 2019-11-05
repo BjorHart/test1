@@ -105,7 +105,7 @@ def run_damage_calculation():
 
 #Connect to MQTT
 client = paho.Client()
-client.connect('195.159.164.54')
+client.connect('40.115.24.34')
 client.loop_start()
 
-#run_damage_calculation()
+run_damage_calculation()
