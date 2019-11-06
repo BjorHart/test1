@@ -11,14 +11,14 @@ If both Arduino boards have all pins correctly placed (according to the document
 
 
 1. Plug both Arduinos and the Braccio robotic arm into a power outlet. Wait for constant blue lights to appear on both Arduino Yún boards (indicating connected to WIFI). If constant blue lights dont appear after a minute or two, the arduinos must be connected to a local WIFI. This is done in the following way (repeated for both arduinos): 
-  1. Connect the arduino to a computer.
-  2. Hold the WIFI button (on the side of the arduino) down for ca. 8 seconds, in order to reset the arduinos WIFI settings. this will        enable the computer to connect a temporary arduino WIFI hotspot. 
-  3. Connect to the arduino hotspot and go to: 192.168.240.1 in your browser.
-  4. When asked for a password, try one of the following: arduino, #EdrMedeso.
-  5. After successful login, go to configure on top of the page.
-  6. Select wanted WIFI network and enter WIFI password.
-  7. Choose configure and restart.
-  8. The arduino light will now be constant blue. Reinsert the power outlet of the arduino.
+    1. Connect the arduino to a computer.
+    2. Hold the WIFI button (on the side of the arduino) down for ca. 8 seconds, in order to reset the arduinos WIFI settings. this will        enable the computer to connect a temporary arduino WIFI hotspot. 
+    3. Connect to the arduino hotspot and go to: 192.168.240.1 in your browser.
+    4. When asked for a password, try one of the following: arduino, #EdrMedeso.
+    5. After successful login, go to configure on top of the page.
+    6. Select wanted WIFI network and enter WIFI password.
+    7. Choose configure and restart.
+    8. The arduino light will now be constant blue. Reinsert the power outlet of the arduino.
   
 2. On the virtual machine; run [run.bat](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master) found above. This will start the runtime simulation of the robotic arm as well as start the Vuforia server.
 
