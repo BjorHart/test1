@@ -27,7 +27,7 @@ There are also some libraries the needs to be installed these are:
 - MPU6050_6Axis_MotionApps20
 Install these libraries from Sketch>Include Libraries>Manage Libraries in the Arduino IDE or manually by importing them from the [Setup_and_libraries](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/Arduino/Setup_and_libraries) subfolder.
 
-The MQTT broker used for communication between the Arduino and the Thingworx platform is installed and running on the Arduino connected to all the sensors, how to to this can be seen in this [guide](https://www.youtube.com/watch?v=rL7dV3rNpGU).
+
 <a name="of2"></a>
 ## Documentation
 There are two subfolders found inside the [finalVersion](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/Arduino/finalVersion) folder, [roboticArmCode](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/Arduino/finalVersion/roboticArmCode) and [transmitSensorData](https://github.com/EDRoMedeso/Summer-Intern-Project-2019/tree/master/Arduino/finalVersion/transmitSensorData).
